@@ -1,0 +1,1843 @@
+\documentclass{book}
+
+
+
+%Packages
+\usepackage[french]{babel}
+\usepackage{biblatex}
+\usepackage{blindtext}
+\usepackage{appendix}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{tabto}
+\usepackage{amsfonts} 
+\usepackage[Conny]{fncychap}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\usepackage{lmodern}
+\usepackage[table]{xcolor}
+\usepackage{tcolorbox}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\rfoot{Page \thepage \hspace{1pt} sur \pageref{LastPage}}
+
+\usepackage{hyperref} %must be last package to be imported
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black
+    }
+
+\addbibresource{bibliography.bib} %Import the bibliography file
+
+\newtheorem{theorem}{Théorème}
+\newtheorem{definition}{Définition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{proof}{Preuve}
+\newtheorem{lemma}{Lemme}
+
+\begin{document}
+
+\graphicspath{ {./Images}}
+
+\begin{figure}
+    \includegraphics[width=8cm,height=5cm]{logo_ubfc.png}\\\\\\\\\\
+\end{figure}
+\begin{center}
+    {\fontsize{20}{20}\selectfont Université Bourgogne-Franche-Comté\\}
+    {\fontsize{15}{15}\selectfont UFR - Sciences et techniques }\\
+    {\fontsize{15}{15}\selectfont 9 Avenue Alain Savary, Dijon }\\
+    {\fontsize{15}{15}\selectfont Année universitaire 2021-2022 }
+    \\\
+    \\\
+    \\\
+    
+\end{center}
+
+\begin{center}
+
+\rule{0.8\linewidth}{1pt}
+\end{center}
+
+\begin{center}
+\textbf{\\\\ \Huge Empilement compact et inégalité isopérimétrique} 
+
+\begin{center}
+\rule{0.8\linewidth}{1pt}
+\\\
+\\\
+\\\
+\\\
+\end{center}
+
+\end{center}
+
+\begin{center}
+    {\fontsize{15}{15}\selectfont Projet de Licence 3 mathématique }\\
+    {\fontsize{15}{15}\selectfont Présenté par Noirot Lucas et Routaboule Régis}
+\end{center}
+
+
+
+\tableofcontents
+\chapter*{Introduction}
+\addcontentsline{toc}{part}{Introduction}
+
+L'empilement compact, qu'est ce que c'est ? 
+L'empilement compact est la manière d'agencer des sphères dans l'espace afin d'avoir la plus grande densité de sphères, sans que celles-ci ne se recouvrent.
+On peut par exemple parler d'empilement d'orange, de ballons $\cdots$\\
+L'empilement compact fascine depuis longtemps les mathématiciens. En 1606, l'assistant de Walter Raleigh se pose le problème de l'empilement des boulets de canons. Ils vont alors correspondre avec Johannes Kepler.Il va alors se demander si il existe un empilement d'orange plus compact, plus dense ? En 1611, il fini par émettre une conjecture, c'est bien cet empilement qui est le plus dense/compact possible. \cite{empil4}
+Deux siècles plus tard, en 1831, Gauss démontra que l'empilement de l'épicier était le plus dense des empilements réguliers. Une question se pose alors, et s'il existait un empilement irrégulier d'oranges plus dense que l'empilement régulier de l'épicier ?
+C'est à la fin du $XX^{ième}$ siècle que le mathématicien Thomas Callister hales va démontrer que non, il n'existe pas d'empilement irrégulier plus dense que celui de l'empilement de l'épicier. \\
+En 2016, Maryna Viasovska, une mathématicienne ukrainienne, va résoudre le problème des empilements compacts en dimension 8 et 24.\\\\
+L'isopérimétrie, qu'est ce que c'est ?
+En géométrie euclidienne, l'isopérimétrie est initialement l'étude des propriétés des formes géométriques du plan qui partagent le même périmètre, ce qui se généralise ensuite dans les autres espaces euclidiens. En physique et dans la nature, l'isopérimétrie se manifeste par un problème simple : pour un même volume, peut on chercher à minimiser la surface ? On comprends bien l'idée, avoir moins de surface, c'est avoir moins d'énergie à dépenser.\\\\
+Qu'est ce que l'inégalité isopérimétrique ? En dimension deux, elle relie l'aire avec le périmètre, en dimension trois, elle relie le volume avec la surface..\\\\
+Que va-t-il se passer si on essaye de mélanger les deux idées de l'empilement compact et de l'isopérimétrie ?
+Nous allons nous intéresser de plus près à ces deux questions pour voir comment elles sont liées.
+\cite{empil3}
+
+
+  
+\chapter{Empilements compacts}
+
+Voyons dans un premier temps, l'empilement régulier de sphères égales en différentes dimensions.
+Nous allons introduire les notions d'empilement, d'empilement régulier et irrégulier ainsi que de la densité, permettant d'aborder le reste de notre mémoire.
+\cite{empil1}
+
+On se place dans le cadre des espaces euclidiens de dimension finie.
+
+\section{Découverte}
+\begin{definition}[Empilement]
+Un empilement est une manière de placer des objets dans l'espace sans que celles-ci ne se recouvrent, autrement dis, elles ne s'intersectent pas. 
+
+On peut empiler différents objets, des disque, des ellipses par exemple.
+\end{definition}
+
+\begin{definition}[Empilement régulier]
+Un empilement régulier est un empilement où le centre de chaque objet est placé sur un réseau $\Lamda = \sum_i \mathbb{Z} v_i$ avec $v_i$ un vecteur de cet espace euclidien.
+\end{definition}
+
+\begin{definition}[Empilement irrégulier]
+Un empilement irrégulier est un empilement où les centres des objets ne sont pas placés sur un réseau.
+
+On peut par exemple voir l'empilement d'Apollonius, qui est un empilement fractal, n'est pas régulier.
+\end{definition}
+
+\begin{definition}[Densité]
+La densité d'un empilement est le rapport de l'espace occupé par cet empilement avec le volume de l'espace considéré.
+
+Cela peut être par exemple un ensemble infini, en considérant une densité dans une sphère finie et en faisant tendre le rayon de cette sphère vers l'infinie, on aura alors une valeur finie comme densité.
+\end{definition}
+
+Dans toutes la suite on choisir d'empiler des objets égaux.
+
+\section{Empilements de disques égaux en dimension 2}
+\\\\
+En 1 dimension, une boule est un segment, on cherche donc à empilement des segments de même longueur sur un axe.
+On voit par un dessin que la densité est de 1, en effet les segments recouvrent complètement l'axe.\\\\
+En 2 dimensions, la boule est le disque que l'on connaît. Nous travaillerons donc maintenant avec des disques de rayons r.
+Nous voulons donc placer des disques dans le plan de la manière la plus dense possible.
+Il y a deux arrangements qui se présentent à nous :
+\begin{itemize}
+    \item - l'arrangement rectangulaire
+    \item - l'arrangement hexagonal
+\end{itemize}
+
+\begin{figure}[H]
+~~~~~~~~~~~~~~~~~~~~
+    \includegraphics[width = 4cm]{images/arrangement_rectangulaire.jpg}
+    \hspace{2cm}
+    \includegraphics[width = 4cm]{images/arrangement hexagonal.jpg}
+    \caption{Arrangement rectangulaire et hexagonal}
+    \label{fig:my_label}
+\end{figure}
+\newpage
+
+{\noindent Quelle est la densité de ces deux empilements ?
+Pour calculer la densité de ces deux empilements, nous allons devoir calculer la proportion d'aire des disques par rapport à l'aire du plan.
+Pour cela, on va placer un point sur chaque centre de disque, et relier ces points par un segment si deux disques sont adjacents, on obtient alors les graphes suivants superposés aux empilements rectangulaire et hexagonal }
+
+\begin{figure}[H]
+~~~~~~~~~~~~~~~~~~~~
+    \includegraphics[width = 4cm]{images/orange-1.png}
+    \hspace{2cm}
+    \includegraphics[width = 4cm]{images/orange-2.png}
+    \caption{Arrangement rectangulaire et hexagonal}
+    \label{fig:my_label}
+\end{figure}
+
+{\noindent Dans le cas de l'arrangement rectangulaire, on a pavé le plan par des carrés de côtés 2r, dont les sommets sont au centre des disques. Ainsi, chaque carré a pour aire $4r^2$. De cette aire, il y a une aire de $\pi r^2$ recouverte par des disques, en effet, on a quatre quart de disque de rayon r. Donc la densité de l'empilement est la densité de quatre quarts de disques de rayon r dans un carré de côté 2r qui est $\frac{\pi r^2}{4r^2} = \frac{\pi}{4}$.
+Donc la densité de l'empilement rectangulaire est de $\frac{\pi}{4} \approx 0.785$.} \\\\
+Dans le cas de l'arrangement hexagonal, on a pavé le plan par des triangles équilatéraux de côtés $2r$, dont les sommets sont aux centre des disques. Ainsi, chaque triangle a pour aire $\sqrt{3}r^2$. De cette aire, il y a une aire de $\frac{\pi r^2}{2}$ recouverte par des disques, en effet, on a 3 sixième de disque de rayon r. Donc la densité de l'empilement hexagonal est la densité de 3 sixième de cercle de rayon r dans un carré de côté 2r qui est $\frac{\pi r^2}{2 \sqrt(3) r^2} = \frac{\pi}{2 \sqrt(3)}$.
+Donc la densité de l'empilement hexagonal est de $\frac{\pi}{2 \sqrt(3)} \approx 0.907.$
+
+\subsection{Preuve de l'empilement le plus dense}
+{\noindent On a vu que de vu que l'empilement le plus compact semblait être l'empilement hexagonal, il nous reste à le montrer.}\\\\
+Si l'on compare des empilements réguliers, on verra que l'empilement hexagonal est bien le plus compact, qu'en est il des empilements irréguliers ?\\
+Le mathématicien Alex Thue a eut l'idée de partionner l'espace en région astucieusement choisie  et de montrer que la densité est bien inférieure à la densité de l'empilement hexagonal dans chaque région.\\
+Prenons des disques et agrandissons les tel qu'il remplissent l'espace du triangle.\\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 4cm]{images/orange-3.png}
+    \label{fig:my_label}
+\end{figure}
+
+Le rayon des grands cercles nouvellement obtenu est égal au $\frac{2}{3}$ de la hauteur du triangle équilatéral, on trouve avec un petit calcul que ce rayon est $\frac{2 \sqrt{3}}{3}$.\\
+Définissons maintenant les régions qui partionneront l'espace.
+
+La première est la portion du plan qui n'est pas recouverte par des grands disques.
+
+Pour les deux dernières régions, à chaque fois que des disques ont une intersection non vide, on les divises en secteur délimité par des rayons des cercles qui rejoignent les points d'intersection de leur frontière.
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 5cm]{images/orange-4.png}
+    \hfill
+    \includegraphics[width = 5cm]{images/orange-5.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+\end{figure}
+Le plan peut ainsi être partitionné avec ces 3 types de régions.\\
+
+On voit une partition du plan avec cette image.
+(image)
+La \textbf{densité dans le premier type} est bien sûr nulle.\\
+
+\textbf{Calcul de densité dans les régions de deuxième type.}\\
+L'aire d'un secteur de disque de rayon r et d'ouverture $\theta$ est $\frac{\theta}{2} r^2$.\\
+Donc la densité est $\frac{\frac{\theta}{2}}{r^2 \frac{theta}{2}} = \frac{1}{r^2} = \frac{3}{4} = 0.75$\\
+Cette densité est bien inférieure à la densité de l'empilement hexagonal.\\
+
+\textbf{Calcul de densité dans les régions de troisième type.}\\\\
+Intéressons nous à la densité dans la troisième type de régions.\\
+La région couverte par les petits disques est la réunion de deux secteurs de rayon 1 et d'ouverture $\theta$, qui a donc pour aire $\theta$.
+L'aire de la région est la somme des aires des deux triangles isocèles ayant chacun les 2 côtés de longueur $r = \frac{2 \frac{\sqrt{3}}}{3}$ séparés par un angle $\theta$.
+Par le théorème d'Al-KAshi, on a $c = \sqrt{2 r^2 (1-cos(\theta)}$. On cherche maintenant du côté manquant du double isocèle pour calculer son aire et on trouve $\sqrt{\frac{r^2(1+cos(\theta)}{2}}$. 
+Son aire est donc le produit de ces deux longueurs qui donne $\frac{4}{3} sin(\theta)$.La densité des deux secteurs de disque dans ce double triangles isocèle est donc $\frac{3\theta}{4 sin(\theta)}$. On va étudier cette densité en fonction de $\theta$, déjà, $\theta \in [0, \frac{\pi}{3}]$.On va essayer de montrer que cette densité est bien inférieure à la densité de l'empilement hexagonal. En montrant que cette densité est croissante et que sa borne supérieure est bien inférieure à la densité de l'empilement hexagonal.
+
+{\noindent Soit f : $\mathbb{R}\backslash \left\{  k\pi, k \in \mathbb{Z} \right\} \rightarrow \mathbb{R}$}\\
+
+Pour trouver
+\tabto{3cm} x $\longrightarrow$ $\frac{3x}{4sin(x)}$\\
+f est prolongeable par continuité en 0, on a $\lim\limits_{\substack{x \rightarrow 0^+ \\ x \rightarrow 0^-}} f(x)$ f(x) = $\frac{3}{4}$, on pose donc f(0)=$\frac{3}{4}$\\
+Montrons que f est croissante sur [0,$\frac{\pi}{3}$]. 
+
+\begin{proof}
+Pour cela, on va montrer que f'(x) est positive sur [0,$\frac{\pi}{3}$].\\
+On a f'(x)=$\frac{3sin(x)}{4sin^2(x)}-\frac{3xcos(x)}{4sin^2(x)}$\\
+On va étudier le signe de sin(x) - xcos(x) sur [0,$\frac{\pi}{3}$], elle vaut 0 en 0.\\
+On dérive cette expression, on a cos(x) + xsin(x) - cos(x) = x sin(x). Et pour tout x $\in$ [0,$\frac{\pi}{3}$], on a x sin(x) $>$ 0, donc x $\rightarrow$ sin(x) -x cos(x) est croissante sur [0,$\frac{\pi}{3}$] donc elle est positive car elle vaut 0 en 0. Donc f'(x) $>$ 0 pour tout x $\in$ [0,$\frac{\pi}{3}$] et ainsi, f est croissante sur [0,$\frac{\pi}{3}$].
+\end{proof}
+{\noindent De plus}, on a $f(\frac{\pi}{3}) = \frac{\pi}{2 \sqrt{3}}$
+{\noindent En dimension 3,} c'est le même type de raisonnement qu'a utilisé Thomas C. Halles pour démontrer la densité maximale, il a partitionné l'espace en régions, et a montré que, dans chaque type de régions, la densité est inférieure ou égale à la densité de l'empilement de l'épicier. Mais, car il y a un mais, le nombre de région à considérer est énorme, c'est pourquoi il a utilisé l'ordinateur pour calculer la densité dans tous les types de régions.
+
+\section{Empilements de boules égales en dimension 3}
+En 3 dimensions, les choses se compliquent, nous allons expliquer et donner des résultats sans énoncer de preuves.
+On va s'intéresser à trois types d'empilement en 3 dimensions :
+\begin{itemize}
+    \item cubique
+    \item triangulaire
+    \item hexagonal
+\end{itemize}
+
+\begin{figure}[H]
+    \includegraphics[width = 4cm]{images/arrangement_cubique.png}
+    \hfill
+    \includegraphics[width = 4cm]{images/arrangement_cubique_a_face_centree.png}
+    \hfill
+    \includegraphics[width = 4cm]{images/arrangemet_hexagonal.png}
+    \caption{Arrangement cubique, triangulaire et hexagonal}
+    \label{fig:my_label}
+\end{figure}
+
+On peut remarquer que l'empilement hexagonal peut se décliner sous plusieurs formes en donnant la même densité. Il n'y a donc pas d'unicité quant à la densité d'un empilement.
+
+{\noindent Quelle est la densité de ces 3 empilements ?}\\
+Pour calculer la densité de ces trois empilements, nous allons devoir calculer la proportion d'aire des boules par rapport au volume de l'espace.
+Pour cela, on va de utiliser la même méthode que celle utilisée pour les disques : on va placer un point au centre de chaque boules, et relier ces points par un segment si deux boules sont adjacentes, on obtient alors les graphes suivants superposés aux empilements cubique, triangulaire et hexagonal : 
+\cite{empil2}\\\\
+Dans le cas de l'empilement cubique, on a pavé l'espace par des cubes de côtés $2r$, dont les sommets sont aux centre des boules. Ainsi, chaque cube a pour volume $(2r)^3 = 8r^3$. De ce volume, il y a un volume de $\frac{4}{3} \pi r^3$ occupé par des boules, en effet, on a 8 huitième de boule de rayon r. Donc la densité de l'empilement cubique est la densité d'une boule de rayon r dans un cube de côté 2r qui est \centerline{$\frac{\frac{4}{3} \pi r^3}{8r^3} = \frac{4}{24} \pi = \frac{\pi}{6}$}.\\
+Donc la densité de l'empilement cubique est $\frac{\pi}{6} \approx 0.523$.\\
+La densité de l'empilement hexagonal est $\frac{\pi}{\sqrt(18)} \approx 0.740$.\\
+La densité de l'empilement triangulaire est $\frac{\pi}{\sqrt{27}} \approx 0.604$.\\
+
+\section{Un mot sur les dimensions supérieures}
+On remarque en augmentant de dimensions, que la densité globale a l'air de décroître.\\\\
+Dorénavant, parlons des dimensions 8 et 24. Pourquoi passe-t-on de 3 dimensions à 8 et 24 dimensions ? \\
+Car ces dimensions sont particulières, nous allons le voir plus en détail. Dans des articles publiés en 2016, la mathématicienne Ukrainienne Maryna Viazovska a résolu la question des empilements de sphères en 8 et 24 dimensions. Elle a démontrée que deux arrangements particuliers en dimension 8 et 24 permettent de placer les sphères de la façon la plus dense possible. Mais pourquoi ces dimensions particulières ? Quant on augmente en dimension, on augmente le nombre de cas à considérer, tout devient bien plus compliqué à étudier, pourtant il existe deux dimensions particulières dans lesquels les choses s'arrangent parfaitement : la dimension 8 et 24. Les réseaux des empilements sont respectivement nommé réseau E8 et réseau de Leech, chaque point du réseau représentant le centre d'une sphère. Plus l'on augmente en dimension, plus l'espace entre les oranges dans un empilement augmente, mais en dimension 8 et 24 il augmente suffisamment pour laisser la place à une nouvelle orange. Ce qui simplifie considérablement les objets à étudier.\\
+L'empilement compact a amené à un autre problème, le "Kissing Number". On veut savoir combien de sphères identiques au maximum peuvent se ranger autour d'une sphère de même type. Le problème se pose dans toutes les dimensions, allant de la première à la 24ième.\\
+\begin{figure}[H]
+    \hspace{2cm}
+    \includegraphics[width = 3.5cm]{images/Kissing-2d.png}
+    \hspace{4cm}
+    \includegraphics[width = 3.5cm]{images/Kissing-3d.png}
+    \caption{Kissing Number en dimension 2 et 3}
+    \label{fig:my_label}
+\end{figure}
+
+Combien de sphères identiques au maximum peuvent se ranger autour d'une sphère de même type ? Autrement dit combien peut on placer de sphères tangentes ne se coupant pas à une même sphère ?
+Voici un tableau regroupant les valeurs connus ou estimées des valeurs possibles en chaque dimension.
+On remarque pour les dimensions 2, 8 et 24 qu'il n'y a pas d'espaces entre les sphères tangentes, elles sont toutes tangentes avec les sphères voisines.
+On a donc l'absence d'espace entre les boules qui permet l'unicité de l'arrangement le plus dense.
+
+\begin{tabular}{|c|c|}
+\rowcolor{orange!50}
+\hline Dimension & Kissing Number\\
+\hline 1 & 2 \\
+\hline 2 & 6 \\
+\hline 3 & 12 \\
+\hline 4 & 24 \\
+\hline 5 & 40 à 44 \\
+\hline 6 & 72 à 78 \\
+\hline 7 & 126 à 134 \\
+\hline 8 & 240 \\
+\hline 9 & 306 à 364 \\
+\hline 10 & 500 à 554 \\
+\hline 11 & 582 à 870 \\
+\hline 24 & 196 560 \\
+\hline
+\end{tabular}
+
+{\noindent Pour les autres dimensions, on peut se demander ce qu'il se passera pour la densité et,à en croire les différents résultats publiés, il semblerait que la densité décroît.}
+%parler des codes d'erreurs 
+Cependant il n'y a pas seulement l'empilement de cercles qui fascinent les scientifiques, mais aussi les empilements d'autres polygones réguliers comme le carré, le triangle,les hexagones  ou même les ellipses .
+%automatiquement moins dense : moins bon rapport entre surface et volume ?
+%conjecture kelvin,
+
+\chapter{Les empilements compacts et l'inégalité isopérimétrique}
+
+\subsection{Introduction : Le problème de Didon}
+La légende raconte qu'au $IX^{ème}$ siècle avant Jésus-Christ, Elissa, la princesse de Tyr (en Phénicie, l'actuel Liban, Israël et Syrie) est devenue la reine de Tyr. Son frère, jaloux, va alors assassiner son époux afin de s'octroyer le pouvoir. Elissa va s'enfuir, horrifiée de ce qu'il s'était passé. \\
+Elle va arriver à Byrsa "la peau de boeuf", en Afrique du Nord, une citadelle proche de l'actuelle Tunis, où elle leur demandera l'asile. Ils lui offriront seulement ce dont elle pourrait recouvrir avec la peau d'un boeuf. \\
+Elissa va ainsi découper astucieusement la peau de boeuf en fines lanières. Elle obtiendra une longueur de près de 4km. Avec la corde obtenue, elle va faire un demi-cercle face à la mer, et fonder (vers 814 av. J-C) la ville de Carthage (Kart Hadschat = la ville neuve, au Nord-Est de Tunis) en prenant le nom de Dido. 
+Elle avait inconsciemment résolu le problème isopérimétrique, à savoir parmi toutes les surfaces de mêmes air, quelle est celle avec le plus grand périmètre. \cite{micmath1}\\\\
+
+\subsection{Un début de formalisme}
+Nous pouvons essayer de formaliser mathématiquement cette idée de prendre pour une aire donnée la surface ayant le plus grand périmètre, ou, de façon équivalente, pour un périmètre donné, la figure ayant la plus petit aire.\\\\
+Essayons de formaliser un peu l'idée derrière le problème isopérimétrique.\\
+Si on se donne un périmètre, quelle est la figure géométrique qui a la plus grande aire ? Ce problème s'appelle le problème isopérimétrique. On peut remarquer que :
+\newpage
+{\noindent 1. La solution ne peut pas être une figure concave. En effet, en modifiant la figure comme dans l'image qui suit, on peut voir que l'on augmente l'aire sans changer le périmètre.}
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 4cm]{images/explication_0.png}
+    \hfill
+    \includegraphics[width = 4cm]{images/explication_1.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+\end{figure}
+
+{\noindent La réponse à ce problème est donc forcément une figure qui n'est pas concave, autrement dit une figure convexe.}\\\\
+2. Elle doit avoir partout la même courbure.\\
+En effet, regardons l'image suivante.
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 4cm]{images/explication_2.png}
+    \hfill
+    \includegraphics[width = 4cm]{images/explication_3.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+\end{figure}
+{\noindent Comment peut on trouver une surface plus grande que celle-ci ?}\\
+On peut essayer de découper un morceau de la figure où la courbure est forte, et découper un autre morceau là où la courbure est assez faible, de telle sorte que l'on puisse échange ces deux morceaux, comme les images précédentes le montre.\\
+On voit que le périmètre est resté inchangé, et que la figure nouvellement obtenue est cette fois ci concave. On voit que l'on a créé des petites concavités.\\
+En répétant ces deux étapes un grand nombre de fois, on voit que l'on obtient une figure qui se rapproche du cercle. Autrement dit, l'unique solution du problème isopérimétrique est une figure convexe à courbure constante : le cercle.\\
+Nous pouvons enfin introduire le théorème de l'inégalité isopérimétrique, lien entre la surface délimitée par une courbe et avec le périmètre de la surface délimitée par cette dernière.
+
+\subsection{Le formalisme mathématique}
+
+{\noindent Nous allons aborder les théorèmes isopérimétrique, maintenant que nous avons expliqués qu'est ce que cela était intuitivement, nous allons essayer de mêler ces idées avec les mathématiques.}\\
+Un théorème isopérimétrique étudie les propriétés des formes géométriques qui partagent une même mesure, par exemple le périmètre ou l'aire dans le plan. Ou par exemple la surface et le volume dans l'espace.\\
+On verra que la figure du plan, qui, à périmètre fixé a la plus grande aire est le cercle, ou de façon équivalente, la figure du plan qui à aire fixée a le plus petit périmètre.\\
+On verra de même que dans l'espace, c'est la boule qui pour une aire fixée, aura la plus petite surface. Cette affirmation se généraliser aux dimensions supérieures, la réponse sera une hypershpère de dimension n.\\
+Cette dernière formulation est particulièrement utile dans le monde physique, une bulle de savon cherchera à minimiser sa surface, pour un volume donné, elle prendra donc la forme d'une sphère, les lièvres arctiques ont une forme plus arrondies que leur amis européens, en effet, pour un volume donné, ils veulent minimiser leur surface. On voit que la nature a l'aire particulièrement forte pour déterminer les solutions des problèmes isopérimétriques.\\\\
+Introduisons les courbes de Jordan, qui seront le principal type de courbes dans le plan que nous étudierons et le théorème de Jordan, un théorème important en rapport avec les courbes de Jordan.\\
+Nous ne démontrerons pas ce théorème.
+
+\begin{definition}[Courbe de Jordan]
+Une courbe de Jordan est une application continue $\gamma : [0,1] \rightarrow \mathbb{R}^2$ telle que $\gamma(0) = \gamma(1)$ et $\gamma$ est injective, autrement dit, elle ne possède pas de points doubles.
+
+\end{definition}
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[Théorème de Jordan]
+Soit C une courbe de Jordan de $\mathbb{R}^2$ tel que $C = \gamma([0, t])$.
+Alors le complémentaire $\mathbb{R}^2 \backslash C$, sous-ensemble ouvert de $\mathbb{R}^2$, est composé de deux composantes connexes : $\mathbb{R}^2 \backslash C = Int(C) \cup Ext(C)$
+
+La première partie, intérieure à C, bornée et relativement compacte.
+la seconde, extérieure à C, non bornée allant vers l'infini.
+\end{theorem}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[Inégalité isopérimétrique]
+Soit a,b $\in \mathbb{R}$, on a $[a,b]$ un intervalle compact de R. Soit $\gamma$ : $[a,b]$ $\rightarrow$ $\mathbb{C}$ une courbe de Jordan de classe $C^1$ par morceaux, de longueur L et enfermant une surface S (C'est-à-dire que $\gamma$ est une courbe continue fermée). Alors\\
+\centerline{$L^2$ $\geq$ 4$\pi$S}\\
+\centerline{i.e $\pi .(\frac{L}{2\pi})^2 \geq S$}\\
+On voit que la surface délimitée par n'importe quelle courbe est inférieure à la surface d'un cercle de rayon $\frac{L}{2\pi}$. Autrement dit, avec une courbe de périmètre L, on peut construire un cercle de rayon $\frac{L}{2\pi}$, et on retrouve bien le périmètre du cercle L.
+\end{theorem}
+\end{tcolorbox}
+
+{\noindent Avant de prouver ce théorème, on doit introduire un peu de la théorie des séries de Fourier, tous les résultats présentés ici ne seront pas démontrés afin de ne pas s'éloigner de notre sujet. Cette théorie nous servira en effet à mieux comprendre la preuve. Nous verrons ensuite pourquoi les séries de Fourier sont utilisée pour cette preuve, notamment car on peut assimiler une courbe de Jordan à une fonction périodique.}\\
+Les séries de Fourier sont un outil fondamental dans l'étude des fonctions périodiques.
+
+\begin{definition}[Fonction périodique]
+Soit $f : \mathbb{R} \rightarrow \mathbb{R}$ et $t \in \mathbb{R}$, on dit que f est t-périodique si 
+\centerline{$\forall x \in \mathbb{R}, f(x+t) = f(x)$}
+\end{definition}
+
+{\noindent L'idée derrière les séries de Fourier est de décomposer une fonction t-périodique est une somme, finie ou infinie, de fonctions sinusoïdales.}\\
+On suppose désormais que f est $L^p$ intégrable au sens de Lebesgue.
+\begin{definition}[Coefficient de Fourier de f]
+Soit f une fonction réelle T-périodique.\\
+On définit le coefficient de Fourier de f par $ \frac{1}{T} \int _T f(t) e^{-i2 \pi \frac{n}{T}t} dt$ avec $n \in \mathbb{Z}$.
+\end{definition}
+
+\begin{definition}[Série de Fourier]
+La série de Fourier de f est donc
+$f(x) = \underset{n \in \mathbb{Z}}{\sum} c_n(f) e^{i2 \pi \frac{n}{T}x}$
+\end{definition}
+
+Sire, voici une égalité qui nous sera bien utile.
+
+\begin{definition}[Égalité de Parseval]
+Soit f une fonction $T$-périodique, continue par morceaux, de carré intégrable $(f \in L^2)$. L'égalité de Parseval est :
+$$ \underset{n \in \mathbb{Z}}{\sum} | c_n (f) | ^2 = \frac{1}{T} \int _T |f(t)|^2 dt$$
+\end{definition}
+
+{\noindent Introduisons maintenant des inégalitées qui seront utiles, ici nous ne le démontreront pas car elle sont très compliquée.}
+
+\begin{tcolorbox}[colback=green!6]
+\textbf{Théorème de Green}
+\begin{center}
+Soit C une courbe orientée positivement de classe $C^1$ délimitant un domaine borné D du plan. Soient P(x,y) et Q(x,y) deux fonctions continûment différentiables sur un ouvert contenant D. Alors :\\
+\centerline{$\int_C$ P(x,y)dx + Q(x,y)dy = $\iint_D (\frac{\partial Q}{\partial x}$ - $\frac{\partial P}{\partial y})dxdy$}
+\end{center}
+\end{tcolorbox}
+
+{\noindent Afin de comprendre le théorème isopérimétrique, nous allons introduire les concepts mathématiques nécessaires à sa compréhension}
+
+\begin{definition}[La formule de Stokes]
+Soit D un domaine régulier d'une sous-variété de dimension 2 orientée S et soit $\partial D$ son bord orienté. Soit $\alpha$ une 1-forme définie sur un ouvert contenant S, alors :
+\centerline{$\int_{\partial D} \alpha = \int_D d\alpha$}
+\end{definition}
+
+\begin{proof}[Preuve du théorème isopérimétrique pour les courbes de Jordan]
+{\noindent Pour prouver ce théorème, nous allons utiliser la théorie de la mesure de Lebesgue. D'après le théorème de Jordan, $\mathbb{C} \backslash \Gamma$ possède exactement deux composantes connexes, l'une notée A bornée et l'autre non bornée. On a alors S=$\lambda$(A).\\
+
+{\noindent De plus, si on pose $f=x+iy$, avec f orientée positivement, on a avec la formule de Green-Riemann avec Q: (x,y) $\rightarrow$ $\frac{x}{2}$, P: (x,y) $\rightarrow$ $\frac{-y}{2}$ et $\Omega$ l'intérieur de la courbe $\Gamma$ on a $\frac{\partial Q}{\partial x}$ - $\frac{\partial P}{\partial y}$=1 et donc \\
+S=$\iint_\Omega$dxdy = $\int_{\partial\Omega} (P(x,y)dx + Q(x,y)dy)$= $\frac{1}{2}\int^b_a$x(t)y'(t) - y(t)x'(t)dt =$\frac{1}{2}$Im($\int^b_a f'(s)\overline{f(s)}$ds)}}\\\\
+On peut supposer sans perdre de généralité que L = 1. De même, quitte à paramétrer la courbe différemment, on peut la paramétrer par une abscisse curviligne de la courbe, c'est à dire rendre notre paramétrage normal, et supposer que notre courbe est orientée positivement.\\
+On va maintenant préparer le contexte pour introduire les séries de Fourier.\\
+Transformons f en une fonction périodique. Puisque $f(0) = f(1)$, on peut prolonger f en une fonction 1-périodique et $C^1$ par morceaux.\\
+Alors, pour $n \in \mathbb{Z}$, on peut définir, le n-ème coefficient de Fourier de cette application :
+$C_n(f) := \int _{[0,1]} f(s) e^{-2 i \pi ns} ds$.
+Comme f est de classe $C^1$ sur $[0,1]$, on a $C_n(f') = 2i \pi n C_n(f)$. On retrouve ce résultat par une simple intégration par partie.\\
+La formule de Parseval appliquée à $f'$ qui est bien $L^2$ car continue sur un compact, donne alors :
+$L = 1 = \int _{[0,1]} -f'(s)| ds = \underset{n \in \mathbb{Z}}{\sum} |C_n(f')|^2 = \underset{n \in \mathbb{Z}}{\sum} 4 \pi ^2 n^2 |C_n(f)|^2$.\\
+Comme $f$ et $f'$ sont $L^2$ elles sont sommes au sens $L^2$ de leur séries de Fourier. En particulier :
+$\int _{[0,1]} f'(s) \overline{f(s)} ds =\underset{n \in \mathbb{Z}}{\sum} C_n(f') \overline{C_n(f)}$. On a ainsi par la formule définie au début de la preuve : $S = \frac{1}{2} Im(\int _{[0,1]} f'(s) \overline{f(s)}) = \frac{1}{2} Im(\underset{n \in \mathbb{Z}}{\sum} C_n(f') \overline{C_n(f)}) = \frac{1}{2} Im(\underset{n \in \mathbb{Z}}{\sum} 2 i \pi c C_n(f) \overline{C_n(f)}) = \underset{n \in \mathbb{Z}}{\sum} \pi n |C_n(f)|^2$ car $C_n(f) \overline{C_n(f)} = |C_n(f)|^2$.\\
+Pour finir la preuve, étudions maintenant le signe de la différence de $L = L^2 = 1$ et $4 \pi S$
+$$L-4 \pi S = \sum 4 n^2 \pi ^2 |C_n(f)|^2 - 4 \pi \sum \pi n |C_n(f)|^2$$
+$$= 4 \pi ^2 \sum ((n^2-n) |C_n(f)|^2)) \geq 0$$\\
+Car c'est une somme de termes positifs, d'où $L^2 \geq 4 \pi S$.\\
+Pour le cas de l'égalité $L^2 = 4 \pi S$. Comme $n^2-n > 0 \forall n \geq 2$ et tout n strictement négatif, cela implique que les coefficients $C_n(f)$ sont nulles pour tout $n \in \mathbb{Z} \backslash {0,1}$.\\
+Ainsi $L^2 = 4 \pi S$ si et seulement si pour tout $s \in [0,1], f(s)$ est égal à $C_0(f) +C_1(f) e^{i 2 \pi s}$.\\
+Ce qui définit le cercle d'équation de centre $c_0(f)$ et de rayon $|c_1(f)|$.
+\end{proof}
+
+{\noindent \textbf{}Nous allons maintenant énoncer d'autres théorèmes isopérimétriques, nous les donnons pour comprendre ce qu'il se passe en dimensions supérieure. Nous avons choisis de ne pas les démontrer.}
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[Théorème isopérimétrique dans l'espace]
+Soit un compact K, de volume V, de frontière d'aire S.\\
+Alors $S^3 \geq 36 \pi V^2$ avec égalité si et seulement si K est une boule.
+\end{theorem}
+\end{tcolorbox}
+
+{\noindent En dimension supérieure à 3, nous devons donner plus de contexte car le théorème est plus délicat à mettre en place.}\\
+Soit E un espace euclidien, de dimension $n \geq 4$. On munit E de la mesure de Lebesgue $\mu$.\\
+On note B la boule unité de E.\\
+Soit A un compact de E dont on note $\partial A$ la frontière.
+Ainsi $\mu(A)$ représente le "volume" de A.\\
+Cependant, on ne peut pas mesurer simplement $\partial A$, on ne sait pas si cet ensemble est mesurable au sens de Lebesgue. On va donc utiliser la formule de Steiner-Minkowski :\\
+\centerline{$\lambda( \partial A) = \underset{ \epsilon \rightarrow 0}{liminf} \frac{\mu(A+ \overline{B_\epsilon} - \mu (A)}{\epsilon}$}\\ où $\overline{B_\epsilon}$ est la boule fermée de E de rayon $\epsilon$.
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[Inégalité isopérimétrique en dimension n]
+On a $\lambda (\partial A)^n \geq n^n \mu (A)^{n-1} \mu (B)$ avec égalité si et seulement si A = B.
+\end{theorem}
+\end{tcolorbox}
+\newpage
+
+\section{Conclusion : Du nid d'abeille aux bulles de savons}
+
+L'aspect de densité, lié aux empilements compacts et l'aspect isopérimétrie sont intimement liés. \\
+Considérons l'empilement hexagonal du plan, et plaçons un point au centre de chaque cercle. Une question d'apparence idiote est de se demander : pour un centre de cercle donné, quel est l'ensemble des points qui sont plus proches de lui que des autres centres ? La réponse qui vient naturellement est de répondre le cercle, et c'est vrai, mais nous oublions des points ! Ceux qui ne sont situés dans aucuns cercles, ceux qui se trouvent dans les petits espaces libres entres les cercles, la réalité est que l'ensemble de points le plus proches du centre s'avère être un hexagone ! Et si maintenant nous décidons de tracer l'hexagone associé à chaque centre de cercle, nous obtenons le pavage hexagonal.
+
+Cette notion même s'appelle le diagramme de Voronoï de ces ensembles de points.
+
+\begin{definition}[Diagramme de Voronoï]
+
+Le diagramme de Voronoï d'un ensemble de points est constitué d'une cellule de Voronoï pour chaque points où chaque cellule est définie par l'ensemble de points le plus proche de ce point. Cela forme une partition de l'espace.
+\end{definition}
+
+En dimension 3, l'empilement le plus dense n'est pas unique, on peut s'intéresser aux diagrammes de Voronoï liés à ces empilements et constater que tous n'ont pas la même constante isopérimétrique ! Cette remarque est le coeur du problème de la conjecture de Kelvin, qui s'intéressa au nid d'abeille en 3 dimensions. Différentes structures sont trouvées avec des approches nouvelles, le lecteur est renvoyé aux travaux de Weaire-Phelan, qui ont trouvés un contre exemple à la conjecture de Kelvin. LE lecteur est aussi renvoyé à la mousse de bière, en effet, la mousse de bière forme un lien assez intéressants entre les empilements compacts et le problème isopérimétrique, c'est d'ailleurs de là que vient la structure de Weaire-Phelan. 
+
+\chapter{La conjecture du nid d'abeille}
+
+\section{Introduction : les nids d'abeilles}
+La conjecture du nid d'abeille énonce que le pavage hexagonal régulier est la partition du plan en surface égales ayant le plus petit périmètre.\\
+Les premières traces de cette conjecture remontent au $IV^{\grave{e}me}$ siècle après J-C dans le livre V de Pappus. On savait déjà à cette époque que seuls trois polygones réguliers pouvaient paver le plan : le triangle, le carré et l'hexagone. Pappus, observant les nids d'abeille, déclara qu'elles utilisaient le pavage hexagonal, car, pour une quantité de matériaux donnés, la forme hexagonal est celle des trois polygones régulier qui permet de renfermer la plus grande quantité de miel. Il faisait, implicitement, la comparaison entre les 3 pavages réguliers montrant que le pavage hexagonal est celui le plus économique. Darwin partageait cette opinion également. Il pensait que la pavage hexagonal utilisé par les abeilles, était le résultat d'une sélection naturelle, où les nids les plus économes en cire était les plus viables.\\
+Cette conjecture ne devint un théorème qu'en 1999, la preuve étant apportée par Thomas Callister Hales, en seulement 22 pages. 
+\cite{thomas1}
+
+\section{Preuve de la conjecture}
+Nous allons essayer d'expliquer sa démarche, et de démontrer, avec nos propres mots et nos formulations, la conjecture du nid d'abeille, nous essayerons d'illustrer les concepts.\\
+(mise en contexte math : que l'on passe à l'inégalité isopérimétrique)
+Il faut créer une formulation mathématique à cette conjecture, nous allons donner quelques définitions d'objets mathématiques nécessaires à la compréhension du théorème.\\\\
+On va tout d'abord énoncer les différentes définitions utilisées ci-dessous\\
+Nous verrons dans la fin de cette partie que Thomas C. Halles utilise beaucoup de fonction qui ne gardent que certaines valeurs, c'est une façon équivalente de faire la troncation d'ensembles. Nous ne savons cependant pas exactement pourquoi il a choisit ces valeurs particulières.
+
+\begin{definition}[Courbe lisse]
+Une courbe dans le plan de classe $\mathcal{C}^{\infty}$ sera qualifiée de lisse.
+\end{definition}
+
+\begin{definition}[Graphe de $\mathbb{R}^2$ composé de courbes lisses]
+Un graphe de $\mathbb{R}^2$ composé de courbes lisses est un ensemble de points dans le plans reliés par des courbes lisses qui ne se croisent pas entre elles, ni avec elles mêmes.
+\end{definition}
+
+\begin{definition}[Graphe localement fini]
+Un graphe infini dont chaque sommets a un degré fini est dit localement fini.
+\end{definition}
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[La conjecture du nid d'abeille]
+Soit $\Gamma$ un graphe localement fini de $\mathbb{R}^2$, composé de courbes lisses et tel que $\mathbb{R}^2 \backslash \Gamma$ ait une infinité de composantes connexes bornées, toute d'aire 1.
+Soit C l'union de ces composantes bornées.
+Alors $\underset{r \rightarrow \infty}{\limsup}~ \frac{\text{perim}(C \cap B(0,r))}{\text{aire}(C \cap B(0,r))}$
+\end{theorem}
+\end{tcolorbox}
+
+Cependant ce problème pose problème car il n'est pas assez général. Et l'auteur Thomas C. Halles se demande pourquoi a t'on besoin d'utiliser une limite supérieure.
+\subsection{La conjecture du nid d'abeille pour les ensembles ouverts non connexes}
+
+Nous avons choisis de simplifier le théorème suivant, mais en restant assez général pour la suite de notre mémoire. \\
+Nous allons introduire les aspects mathématiques nécessaire à la compréhension du théorème.
+Nous devons calculer la longueur d'une courbe paramétrée, si la courbe paramétrée est régulière, c'est à dire de classe $C^1$, la longueur d'une courbe paramétrée $\alpha : I \rightarrow \mathbb{R}$ est donnée par $\int^b_a ||\alpha ' (t) || dt$. Mais si la courbe paramétrée n'est pas de classe $C^1$, nous ne pouvons plus utiliser cette formule, on introduira donc la notion de courbe rectifiable pour ce cas de figure.
+
+\begin{definition}[Courbe rectifiable]
+Soit $C = ([a, b], f)$ un arc paramétré. Pour d une subdivision de $[a, b]$ donnée par $t_0 = a < t_1 < \cdots < t_n = b$, on note :
+$$L(d) = \underset{i=0}{\overset{n-1}{\sum}} ||\overrightarrow{f(t_i)f(t_{i+1}}||$$
+On dit que C est rectifiable si $\left\{ L(d) ;~d~subdivision~de~[a,b] \right\}$ est majoré.\\
+Dans ce cas, on appelle longueur de C la borne supérieure de cet ensemble.
+
+\end{definition}
+
+{\noindent Une courbe rectifiable est donc simplement une courbe dont on peut calculer sa longueur.}\\
+Pour simplifier la preuve, nous verrons la mesure de Haussdorf comme une mesure de Lebesgue.
+
+\begin{definition}[Mesure de Lebesgue]
+Soit $(\mathbb{R},\mathcal{B(\mathbb{R})})$ l'espace mesurable $\mathbb{R}$ muni de sa tribu borélienne (c'est-à-dire la plus petite $\sigma$-algèbre contenant l'ensemble des ouverts). Il existe une unique mesure notée $\lambda$ sur cet espace mesurable qui possède les propriétés suivantes :\\
+1. $\forall$ a $\in \mathbb{R}$, $\forall$ A $\in \mathbb{R}$, $\lambda$(a+A)=$\lambda$(A)\\
+2.$\lambda([0,1])=1$
+\end{definition}
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[La conjecture du nid d'abeille pour les ensembles ouverts non connexes]
+Soit K un ensemble compact dans le plan contenant des ensembles disjoints mesurables $R_1, R_2, \cdots$. \\
+On suppose que $R_i$ a une frontière rectifiable $\partial R_i$ pour tout i. \\
+On pose $\alpha _i = min(1, aire(R_i))$. \\ 
+On pose $\Gamma = \underset{i}{\cup} \partial R_i$. \\
+On suppose  qu'il existe i tel que $\alpha _i >0$. 
+Alors $\lambda(\Gamma) > \sqrt[4]{12} \sum \alpha _i$.
+
+\end{theorem}
+\end{tcolorbox}
+
+\subsection{La conjecture du nid d'abeille, version finie}
+
+{\noindent Voyons maintenant ce que cela donne en dimension finie.}
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[Conjecture du nid d'abeille, version finie]
+Supposons que $0 < \alpha _i \leq 1$ pour $i = 1, \cdots, n$. Soit $A = \sum _i \alpha _i$. Alors
+$$\text{perim}(\Gamma(\alpha_1, \cdots, \alpha_n)) > A \sqrt[4]{12}$$
+
+\end{theorem}
+\end{tcolorbox}
+
+{\noindent Nous ne démontrerons pas que ce théorème implique le théorème du nid d'abeille pour les ensembles ouverts non connexes car la démonstration est très compliquée, mais pas très longue, elle utilise des théories mathématiques comme celle des courants.}\\
+Nous allons en revanche démontrer que ce théorème implique le théorème du nid d'abeille version naïve.
+
+\begin{proof}
+On suppose ce dernier théorème vrai.\\
+Soit $\Gamma$ un graphe localement fini dans $\mathbb{R}^2$, composé de courbes lisses et tel que $\mathbb{R}^2 \backslash \Gamma$ ait une infinité de composantes connexes bornées, toutes d'unité d'aire.\\
+Soit C l'union de ces composantes bornées.\\
+On est donc dans le cas particulier où $\alpha _1 = \cdots = \alpha _n = 1$. On a alors $A = \sum _i \alpha _i = n$. Alors on a $\text{perim} ( \Gamma(1, \cdots, 1)) > n \sqrt[4]{12}$.\\
+Soit $\rho _n = \frac{text{perim} ( \Gamma(1, \cdots, 1))}{n}$\\
+On pose $\rho _\infty = inf(\underset{r \rightarrow \infty}{\frac{perim(C \cap B(0,r))}{aire(C \cap B(0,r))}}, C)$ où C parcourt tous les graphes planaires satisfaisant les conditions du théorème.\\
+On va montrer que liminf $ \rho _n = \rho _\infty = \sqrt[4]{12}$ montrant ainsi le théorème.\\
+En prenant le cas particulier C qui est la pavage hexagonal régulier, on obtient que $\rho \infty \leq \sqrt[4]{12}$.\\
+D'après le théorème du nid d'abeille version finie, on a $ \rho _n > \sqrt[4]{12} \forall n \in \mathbb{N} \Rightarrow liminf \rho _n \geq \sqrt[4]{12} \geq \rho _\infty$.\\
+On assume vrai un résultat utilisé par Thomas C. Halles, on a alors $\rho _\infty \geq liminf \rho _n$.
+Donc $liminf \rho _n = \rho \infty$\\
+Donc $limsup \rho _n \geq \rho \infty = \sqrt[4]{12}$. Ce qui achève la démonstration du théorème.
+
+
+\end{proof}
+
+\subsection{La conjecture du nid d'abeille sur un tore}
+{\noindent Ce théorème va nous permettre de passer de l'infini au fini.}
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[La conjecture du nid d'abeille sur un tore]
+Soit les $R_i$, régions connectées de notre graphe, tel que l'union des $R_i$ est connectée. 
+En supposant que chaque $R_i$ est un hexagone régulier d'aire 1 avec chaque $\alpha_i$ = 1, on a :\\
+\centerline{perim~(${\bigcup}{\partial}{R_i}$)}
+\end{theorem}
+\end{tcolorbox}
+
+{\noindent Montrons que le théorème de la conjecture du nid d'abeille sur un tore implique la conjecture du nid d'abeille version finie.} \\\\
+Il y aura deux situations dans la démonstration, un cas où l'on, pourra directement appliquer le théorème isopérimétrique afin d'obtenir l'inégalité voulue et un cas où l'on devra amener le graphe planaire fini sur un tore afin d'y appliquer le théorème nouvellement défini. Soit un graphe de l'énoncé du théorème du nid d'abeille version finie. On va alors transformer notre graphe en un cylindre. On va replier ce cylindre d'un bout à l'autre afin d'obtenir un tore. On se retrouve donc dans une situation où le tore peut être partitionné en des régions simplement connexes d'aire finie.\\
+L'intérêt de créer ce nouveau théorème sur un tore est de rajouter une chose importante pour la suite : la compacité de l'espace, en effet, tout ce qui suivra sera uniquement valable sur un compact de $\mathbb{R}^2$.\\\\
+Nous allons présenter une démonstration détaillée et expliquée, ceci étant notre touche personnelle par rapport à la démonstration déjà établie.
+
+\begin{preuve}
+{\noindent\underline{Preuve} : \textit{Le théorème de la conjecture du nid d'abeille sur un tore implique le théorème de la conjecture du nid d'abeille version finie}}\\\\
+Soit $(\Gamma( \alpha_1, \cdots, \alpha _n), A = \sum \alpha i)$ respectant les conditions du théorème du nid d'abeille version finie.\\
+Premier cas de la démonstration : $A \leq 398$.\\
+D'après un argument d'un papier de recherche utilisé par Thomas C. Halles, nous avons choisi d'accepter cet argument comme vrai sans l'expliquer. Le cas $A \leq 398$ est élémentaire car il a été prouvé dans ce papier de recherche que l'on pouvait y appliquer le théorème isopérimétrique, ce que nous allons faire tout de suite.\\
+Supposons que l'on a $R_1, \cdots, R_n$ avec $\text{aire} R_i \geq \alpha _i \in [0,1]$.\\
+En appliquant le théorème isopérimétrique à chaque $R_i$, on a $(1)$
+$$\text{aire} (R_i) = S \leq \frac{L^2}{4 \pi} = \frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}$$
+$$\Leftrightarrow \pi \text{aire} (R_i) \leq (\frac{\text{perim} (R_i)}{2})^2$$
+$$\Leftrightarrow 2 \sqrt{\pi \text{aire} (R_i) \leq \text{perim}(R_i)}$$
+$$\Rightarrow 2 \sqrt{\pi \alpha _i} \leq 2 \sqrt{\pi \text{aire} (R_i)} \leq \text{perim}(R_i)$$
+
+Appliquons maintenant le théorème isopérimétrique à l'union des $R_i$, on a $(2)$
+$$aire (\cup_i Ri) = S \leq \frac{L^2}{4 \pi} = \frac{perim(\Gamma(\alpha _1, \cdots, \alpha _n))^2}{4 \pi}$$
+$$\Leftrightarrow 2 \sqrt{\pi aire (\cup _i R_i} \leq perim(\Gamma(\alpha _1, \cdots, \alpha _n)$$
+$$\Rightarrow 2 \sqrt{\pi A} = 2 \sqrt{\pi \sum \alpha _i} \leq 2 \sqrt{\pi aire(\cup _i R_i)} \leq perim(\Gamma(\alpha _1, \cdots, \alpha _n)$$
+
+Avec $(1)$, en faisant la somme de cette inégalité pour chaque i, on a $(3)$
+$$perim(\Gamma(\alpha _1, \cdots, \alpha _n) \geq \sum 2 \sqrt{\pi} \alpha _i$$
+
+En additionnant $(1)$ et $(3)$, on a finalement 
+$$2 perim(\Gamma(\alpha _1, \cdots, \alpha _n) \geq \sum 2 \sqrt{\pi} \alpha _i + 2 \sqrt{\pi A}$$
+$$ = 2 \sqrt{\pi}(\sum \sqrt{\alpha _i} + \sqrt{A})$$
+$$ \geq 2 \sqrt{\pi}(\sum \alpha _i + \sqrt{A}) car \sqrt{\alpha _i} \geq \alpha _i pour tout i car \alpha _i \leq 1$$
+$$= 2 \sqrt{\pi}(A + \sqrt{A})$$
+$$= 2 \sqrt{\pi}(1+\frac{1}{\sqrt{A}}A$$
+$$= 2(\sqrt{\pi} + \frac{\sqrt{\pi}}{\sqrt{A}})A$$
+Or $\sqrt{\pi} + \frac{\sqrt{\pi}}{\sqrt{A}} \geq \sqrt{\pi} + \frac{\sqrt{\pi}}{\sqrt{398}} \approx 1.8612989 \geq \sqrt[4]{12} \approx 1.8612097$
+Donc $2 (\sqrt{\pi} + \frac{\sqrt{\pi}}{\sqrt{A}})A  \leq 2 \sqrt[4]{12} A)$.
+\\\\
+Ce qui achève le premier cas de cette démonstration.\\
+Second cas de la démonstration $A > 398$.\\
+Pour compléter cette preuve, nous allons transférer le graphe et ses ensembles ouverts $R_i$ sur un tore afin d'y appliquer le théorème du nid d'abeille sur un tore pour obtenir une inégalité qui nous conduiras à montrer vrai le théorème sur le nid d'abeille version finie. L'avantage du tore est qu'il est compact, ce qui simplifie beaucoup les choses sur les hypothèses formulables.\\
+Avant de tout transférer sur un tore, on va le transférer sur un cylindre. On va créer ces nouveaux objets en quotientant le plan de façon à simplifier les choses.
+\newpage
+On va tout d'abord définir un diamètre pour le graphe, nous le définissons par la distance entre les 2 points les plus éloignés du graphe $\Gamma$ précédemment défini. Cette distance est finie car nous sommes dans le cas d'un graphe fini.
+On pose v le vecteur reliant ces 2 points (Première et seconde image de la figure suivante) et on quotiente ensuite $\mathbb{R^2}$ par $\mathbb{Z} v$, l'ensemble quotient $\mathbb{R}^2 \backslash _{\mathbb{Z} v}$ est alors un cylindre où la fonction qui envoie les points du graphe initial sur le tore est injective sauf pour les deux points définissant le diamètre qui deviennent identiques. (troisième image de la figure suivante).\\\\
+Ensuite, comme ces deux points sont les plus éloignés, on voit que le graphe est contenu dans un carré de côté $|v|$. Cela nous assure que nous pourrons quotienter le cylindre pour obtenir un tore en conservant le graphe intact. Sans perdre d'informations.\\\\
+Par conséquent, l'aire  du graphe est au plus l'aire du carré de coté $|v|$, soit $|v|^2$.
+On a donc $|v| \geq \sqrt{A}$ avec $A = \sum \alpha _i$ et $\alpha _i = min(1, aire(R_i)$.
+Cette remarque sera importante pour la fin de la démonstration.\\
+On va maintenant passer au tore.
+Soit w un vecteur orthogonal au vecteur v et unitaire. On choisit $\mu$ le plus grand nombre réel tel que $\Gamma + \mu v$ touche $\Gamma$ sans se superposer. Cela revient à pouvoir former le tore sans que le graphe ne se chevauche lui même. (avant dernière image)\\
+Posons $\Delta = \mathbb{Z}v + \mathbb{Z}(\mu + \sqrt{\frac{1}{A}})w$\\
+La fonction qui envoie le graphe du cylindre sur le tore $T = \mathbb{R}^2 \backslash \Delta$ est injective sauf aux deux points définissant le diamètre du graphe, on va donc ajouter un segment de longueur $ \frac{1}{\sqrt{A}} $ qui lie le graphe et son translaté, qui aura une utilité double : rendre la fonction qui envoie le graphe du cylindre sur le tore injective, et, éviter des cas dégénérés qui rendent invalide le théorème du nid d'abeille sur un tore. (dernière image)\\
+Expliquons plus en détail ce dernier point, rajouter un segment ne fait pas perdre de généralité au théorème, on peut donc le rajouter.\\\\
+Sur le plan, les ensembles ouverts à l'infini que l'on notetera $R_0$ deviennent simplement connexe sur le tore. En ajoutant ce côté de longueur $\frac{1}{\sqrt{A}}$, Thomas C. Halles évite ce qu'il appelle des complications, nous n'entreront pas dans le détail de ces complications, abordant des concepts mathématique parfaitement inconnue. Ces complications rendraient en effet le graphe invalide, comme un ensemble "boucle" autour du tore, comme par exemple un bracelet autour du bras.\\
+Grâce au fait que $|v| \geq \sqrt{A}$ et $R_0$ a un côté de longueur au moins $\frac{1}{\sqrt{A}}$ dans la direction w à n'importe quel point, son aire est d'au moins $\sqrt{A} \times \frac{1}{\sqrt{A}} = 1$, ce qui rend le théorème valide et explicite la valeur $\frac{1}{\sqrt{A}}$ choisie. L'aire d'au moins 1 est nécessaire pour vérifier les conditions du théorème valide pour pouvoir l'appliquer (bien expliquer je sens qu'il manque qqch).\\
+Nous avons maintenant une partition du tore $T = \mathbb{R}^2 \backslash \delta$ en régions connexes et simplement connexes d'aire totale au moins $1+A$.\\
+Appliquons maintenant le théorème du nid d'abeille sur un tore à ce graphe, qui donne l'inégalité 
+$$perim (\Gamma) + \frac{1}{\sqrt{A}} \geq  (1+A) \sqrt[4]{12}$$\\
+Ce qui donné l'inégalité $ perim(\Gamma) \geq A \sqrt[4]{12} $ recherchée. Ceci achève la deuxième partie de cette démonstration et achève donc complètement la démonstration.
+\end{preuve}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/graphe_0.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/graphe_1.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/graphe_2.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/graphe_3.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/graphe_4.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/graphe_5.png}
+    \hfill
+    \hfill
+    \caption{Cheminement du graphe planaire au graphe sur un tore}
+    \label{fig:my_label}
+\end{figure}
+
+Nous avons volontairement gardé le même nom pour le graphe planaire et toroïdale pour insister sur le fait qu'il s'agit du "même" graphe. De plus, l'aire et le périmètre restent inchangés sur le tore.\\
+Dans son papier de recherche, Thomas C. Halles explique que l'on peut modifier le graphe toroïdale sans perdre en généralité en le modifiant de telle sorte à ce que chaque sommet du graphe soit relié à 3 autres côtés exactement. Nous avons choisi de ne pas l'expliquer.
+
+\newpage
+
+Pour la suite et la fin de cette partie sur la démonstration de la conjecture du nid d'abeille, nous allons introduire différents concepts et faire la mise en contexte de la pour l'introduction du dernier théorème.
+
+\subsection{L'inégalité isopérimétrique hexagonale pour les courbes planes fermées.}
+
+{\noindent Maintenant, tout se passera sur un compact, plus précisément un tore.}\\
+Il y a une remarque importante pour les graphes à formuler.
+
+\begin{definition}[Caractéristique d'Euler]
+La caractéristique d'Euler est un invariant numérique, un nombre qui décrit un aspect d'une forme d'un espace topologique, ou qui décrit la structure de cet espace, elle est notée $\kappa $.\\
+Soit un graphe dans cet espace topologique, on a alors 
+On a $\kappa  = V - E + F$, avec V le nombre de sommets du graphe, E le nombre de côtés du graphe et F le nombre de faces délimités par ce graphe.
+Nous ne rentreront pas dans les détails de ceci, nous allons juste insister sur la valeur de ce nombre quand l'espace considéré est un tore, la caractéristique d'Euler pour un graphe toroïdale est de 0 et non 2 comme on aurait pu le penser de prime abord, 2 étant la caractéristique d'Euler pour un graphe planaire.
+
+\end{definition}
+
+
+{\noindent Nous allons expliquer une formule qui a été donnée par Thomas C. Halles sans explications de celle-ci, c'est donc une valeur ajoutée de notre travail. Cette formule sera utile pour montrer que le théorème isopérimétrique hexagonal pour les courbes planes fermée implique le théorème du nid d'abeille sur un tore.}
+
+\begin{tcolorbox}[colback=red!6]
+\begin{proposition}
+On rappelle que la caractéristique d'Euler pour un graphe toroïdale est 0, c'est à dire que l'on a $V-E+F = 0$.\\
+Supposons que ce graphe soit de degré 3, c'est à dire que chaque sommets est relié à 3 arêtes.
+Alors on a $\underset{P}{\sum}(1-\frac{N(P}{6}) = 0.$
+\end{proposition}
+\end{tcolorbox}
+
+\begin{proof}
+On remarque que chaque sommets du graphe est relié à 3 arêtes. Si on compte le nombre d'arêtes pour chaque points et qu'on en fait la somme, on se rend compte à la fin que l'on a compté chaque arêtes deux fois (elle a été comptée par chacun de ses deux points extrémités), on a donc $E = \frac{3}{2} V$.\\
+On obtient alors un système d'équation où $F = E - V$et$ \frac{3}{2}V = E$ qui donne le système $F = \frac{1}{2} V$ et $E = 3F$.\\
+Or on a $\underset{P}{\sum}N(P) = 2E = 6F \Rightarrow F = \underset{P}{\sum} \frac{N(P}{6}$.\\
+On rappelle que $F = \underset{P}{\sum}1$, on a donc $\underset{P}{\sum}(1-\frac{N(P)}{6})=0$. Ce qui achève la démonstration.
+\end{proof}
+
+{\noindent Nous énonçons maintenant le théorème final, l'inégalité isopérimétrique hexagonale pour les courbes planes fermées. }Pour démontrer ce dernier théorème, Thomas C. Halles a trouvé différentes bornes inférieures de la longueur du graphe selon différents cas, qui utilisent différents théorèmes isopérimétriques comme le théorème isopérimétrique pour les polygones, qui énonce qu'à périmètre fixé, c'est le polygone régulier qui enferme la plus grande aire. Il a ensuite au cas par cas (il y en a beaucoup), calculé $\Delta (P)$ et montré qu'il était positif. Nous ne présenterons pas cette preuve qui est très longue, parfois compliqué et répétitive.\\
+Mettons un peu de contexte avant d'énoncer le dernier théorème.\\
+
+On note $\Gamma$ une courbe rectifiable simple fermée par morceaux dans le plan, en considérant ici $\Gamma$ comme étant la version injectée de la courbe du tore vers le plan.\\
+
+On va maintenant placer sur cette courbe $\Gamma$ des points $v_i$, placés dans l'ordre du parcourt de la courbe, ils ne sont pas obligés d'être distincts.\\
+On définit maintenant les cordes $f_i = [e_i, e_{i+1}]$ avec $f_n = [e_n, e_1]$ du graphe. Ces cordes sont orientées.\\
+On note $A_P$ l'aire du polygone formée par les cordes $f_i$.\\
+On note ensuite $e_i$, le côté du graphe joignant $v_i$ à $v_{i+1}$. Avec $e_n$ joignant $v_n$ à $v_1$. On a $\Gamma = \cup_i e_i$. On note ensuite $E(P)$ l'ensemble des cotés de $\Gamma$. Ces côtés sont orientés.\\
+Si f est une corde, on note $f^{op}$ la corde avec l'orientation opposée.\\
+Dans son papier de recherche, Thomas C. Halles utilise l'existence et l'unicité de l'intégrale qu'il utilise pour mesurer ces objets.\\
+On note $x(e)$ la valeur de l'intégrale formée par la corde $f_i$ et le côté $e_i$.\\
+On a pour finir $aire(\Gamma) = A_p + \underset{e \in E(P)}{\sum} x(e)$. \\
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width=5cm]{images/seingeur.png} 
+    \hfill
+    \label{fig:my_label}
+\end{figure}
+On définit finalement une fonction de troncation $T : \mathbb{R} \rightarrow \mathbb{R}$, par \\
+\centerline{$T(x) = \frac{1}{2}, x \geq \frac{1}{2}, \frac{-1}{2}, x \leq \frac{-1}{2}, x, x \in [\frac{-1}{2}, \frac{1}{2}]$}\\
+Cette fonction est équivalente à tronquer un ensemble par un compact. Elle est indispensable à la validité du théorème.
+
+\begin{tcolorbox}[colback=green!6]
+\begin{theorem}[Théorème isopérimétrique hexagonal pour les courbes planes fermées]
+Soit $\Gamma$ une courbe plane fermée. Soit $L(P)$ la longueur de $\Gamma$. Soit  N(P) le nombre de points $v_i$ sur $\Gamma$ comptés avec leur multiplicités.\\
+Alors $L(P) \geq - T(P) \sqrt[4]{12} - (N(P)-6)0.0505+2 \alpha(P) \sqrt[4]{12}$
+\end{theorem}
+\end{tcolorbox}
+
+\begin{lemma}
+Ce théorème implique le théorème du nid d'abeille sur un tore. On considère un tore découpé en régions (ensembles ouverts). On va appliquer cette inégalité aux n différentes régions $R_1, \cdots, R_n$ formant la partition du tore, (Grâce à la compacité du tore, on peut y appliquer des choses globalement.)\\
+
+On définit les points $v_i$ comme les points formant le début et la fin de chaque courbe simple. Soit P une des régions $R_i$. On a que chaque côté de P apparaît avec une orientation opposée $e^{op}$ sur une région voisine car c'est un graphe toroïdale de degré 3. On a donc par construction $x(e) + x(e^{op}) = 0$.\\
+En effectuant la somme par rapport à toutes les côtés e de la partition, on obtient $\underset{e}{\sum} x(e) = 0$.\\
+De plus, comme $\tau$ est une fonction impaire, on a $\tau(x(e)) + \tau(x(e^{op})) = 0.$\\
+On a donc aussi $\underset{e}{\sum} \tau (x(e)) = \underset{P}{\sum} T(P) = 0.$\\
+D'après ce dernier théorème, on a donc : \\
+\centerline{$ 2 \text{perim} (\Gamma) = \underset{P}{\sum} L(P) \geq - \sqrt[4]{12} \underset{P}{\sum} T(P) +6(0.0505) \underset{P}{\sum} (1- \frac{N(P)}{6} + 2 \underset{P}{\sum} \alpha (P) \sqrt[4]{12}$}\\
+La démonstration s'achève en remarquant que deux des trois termes s'annulent suite à une proposition précédemment énoncée et une remarque faite dans la preuve, ce qui achève la preuve.
+\end{lemma}
+\chapter{Simulations}
+
+Dans cette partie, nous allons illustrer par des simulations les concepts précédemment vus d'empilements compacts et d'isopérimétrie.\\\\
+Dans une première partie, nous allons, calculer la constante isopérimétrique de graphes donnés, illustrant ainsi les théorèmes énoncés dans le chapitre sur la conjecture du nid d'abeille. \\\\
+Dans une dernière partie, nous allons, estimer la densité de certains empilements, illustrant ainsi les résultats obtenus dans le chapitre sur l'empilement compact.\\\\
+Tous les algorithmes importants qui ont été utilisés pour faire ces simulations seront expliqués en détails, par des schémas et des explications. Le reste sera laissé en annexe.
+
+\section{Première partie : Isopérimétrie}
+
+Le but de cette première partie est d'estimer la constante isopérimétrique de graphes donnés.\\
+Pour cela, nous devons implémenter un algorithme qui, pour un graphe donné, estimera sa constante isopérimétrique.\\
+Le lecteur est invité à lire l'annexe sur l'aspect informatique pour plus de détails sur les graphes.
+
+\subsection{Algorithme de calcul de la constante isopérimétrique}
+
+Nous avons besoin d'élaborer un algorithme pour estimer l'inégalité isopérimétrique de n'importe quel graphe, avec la formule du théorème du nid d'abeille version naïve. \\
+On a donc besoin de mettre en place la notion d'intersection entre un graphe et une boule centrée en l'origine de rayon r.\\
+Une fois ce nouveau graphe obtenu, nous aurons besoin de calculer son périmètre. Que l'on divisera par l'aire du cercle, nous obtiendrons alors une valeur correspondant à la formule donnée, qui sera bien sure fiable pour de grandes valeurs de r.\\\\
+Voici les grandes étapes visuellement de l'algorithme.
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width=5cm]{images/pic1.png} 
+    \hfill
+    \centering \includegraphics[width=5cm]{images/pic2.png} 
+    \hfill
+    \centering \includegraphics[width=5cm]{images/pic3.png}
+    \hfill
+    \caption{Déroulement de l'algorithme}
+    \label{fig:my_label}
+\end{figure}
+
+{\noindent Pour appuyer nos résultats pratiques, nous avons calculé théoriquement la valeur exacte de la constante isopérimétrique des graphes illustrés dans les exemples suivants. Afin de voir que les valeurs trouvées pratiquement seront très proches des valeurs théoriques, donnant ainsi du crédit à notre algorithme. Elles seront mises en annexe dans la partie code}
+
+\subsection{Résultats}
+
+
+{\noindent Voici quelques résultats pour le triangle, le carré et l'hexagone.}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/qqq3.png}
+    \hfill
+    \hfill
+    \caption{Constante isopérimétrique de l'empilement triangulaire = 2.27}
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/eee3.png}
+    \hfill
+    \hfill
+    \caption{Constante isopérimétrique de l'empilement triangulaire = 2.00}
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/ss1.png}
+    \hfill
+    \hfill
+    \caption{Constante isopérimétrique de l'empilement triangulaire = 1.87}
+    \label{fig:my_label}
+\end{figure}
+
+Ces résultats correspondent bien aux valeurs trouvées théoriquement dans l'annexe.
+
+\subsection{Remarque sur les altérations aléatoires compactes du graphe}
+{\noindent Une altération aléatoire compacte d'un graphe consiste à déplacer chaque point du graphe dans une direction aléatoire et une distance aléatoire bornée par un réel fixé.}\\
+Par exemple, une altérations aléatoire compacte de ce graphe à une distance de 0.5 est :
+(image)\\
+L'idée de compacité vient du fait de ne pas autoriser à ce que les nouvelles cellules du graphes ne soient pas compactes.\\
+Dans nos recherches de simulations, nous nous sommes demandés comment évoluerait la constante isopérimétrique d'un tel graphe.\\
+Si l'on considère tout d'abord l'aire de ce nouveau graphe, si nous le tronquons comme les autres graphe par un compacte, le graphe tronqué conservera la même aire, celle de cette boule $ \pi r^2$.
+L'aire ne change donc pas, intéressons nous maintenant au périmètre de ce graphe tronqué.\\
+Regardons informatiquement ce qu'il se passe, on va poser le cadre des simulations, on va étudier le pavage carré, tous d'unité d'aire, donc de côté unitaire, avec des altérations d'intensités croissantes ${0,25 ; 0,5 ; 0,75 ; 1}$\\
+Nous allons tester ces valeurs pour des graphes de taille croissante. Voici un tableau récapitulatif des valeurs trouvées.\\
+Nous avons pour chaque simulation répété ceci un grand nombre de fois et calculé une moyenne du périmètre dans chaque simulation afin d'avoir une idée plus proche de la réalité.
+
+
+
+\begin{table}[H][Résultats]
+\centering
+\textbf{Pavage carré de 10x10} \\
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  valeur d'altération & périmètre moyen & constante isopérimétrique \\
+  \hline
+  0 & 220 & 1.98\\
+  0.25 & 224.6 & 2.02\\
+  0.5 & 239.4 & 2.15\\
+  0.75 & 266.3 & 2.38\\
+  1 & 303.9 & 2.74\\
+  \hline
+\end{tabular}
+
+\newline
+\textbf{Pavage carré de 50x50} \\
+
+\begin{tabular}{|c|c|c|}
+  
+  \hline
+  valeur d'altération & périmètre moyen & constante isopérimétrique \\
+  \hline
+  0 & 5100 & 1.99\\
+  0.25 & 5208 & 2.04\\
+  0.5 & 5550 & 2.17\\
+  0.75 & 6170 & 2.41\\
+  1 & 7040 & 2.75\\
+  \hline
+
+\end{tabular}
+
+\newline
+\textbf{Pavage carré de 100x100} \\
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  valeur d'altération & périmètre moyen & constante isopérimétrique \\
+  \hline
+  0 & 20200 & 2\\
+  0.25 & 20628 & 2.04\\
+  0.5 & 21981 & 2.17\\
+  0.75 & 24444 & 2.42\\
+  1 & 27896 & 2.76\\
+  \hline
+\end{tabular}
+\end{table}
+
+{\noindent On voit donc que la constante isopérimétrique augmente. Ainsi la constante isopérimétrique est sensibles aux altérations aléatoires compactes.}
+
+\section{Deuxième partie : Densité}
+{\noindent Dans cette deuxième partie sur la densité, nous allons essayer de créer différentes situations, et estimer la densité moyenne dans chacune de ces situations.}
+
+\subsection{Algorithme de calcul de la densité}
+{\noindent L'algorithme de calcul de la densité consiste simplement à calculer la somme des aires des objets et de la diviser par l'aire dans laquelle ces objets sont contenus.}\\
+Nous avons aussi implémentés un petit code qui permet de tester si deux polygones sont grossièrement en contact ou non : on regarde la distance entre leurs centres respectifs et nous voulons que cette distance respecte une certaine distance minimale en fonction du nombre de côté de ce polygone régulier.\}\
+Plus le nombre de côté augmente, plus l'apothème se rapproche du rayon, on peut donc utiliser une distance entre les centres de deux fois l'apothème, on constate que visuellement les polygones ne se superposent pas pour un nombre de côtés plus grand que 7.\\
+Pour un nombre de côtés plus petit que 7, l'apothème est assez différent du rayon, mais le rayon est une trop grossière approximation pour notre système de collisions entre les polygones, on choisit donc de prendre la moyenne entre l'apothème et le rayon, le résultat est satisfaisant sauf pour un nombre de coté égal à 3 ou à 4 où l'on constate qu'ils se chevauchent un peu.
+
+\subsection{Résultats}
+\subsubsection{Polygones réguliers dans un compact : aléatoirement}
+
+{\noindent Dans cette première situation, nous avons généré des polygones réguliers de même nombre de côtés, aléatoirement sur l'écran, le principe est le suivant : à chaque étapes, nous essayons de générer un polygone régulier convexe P, si il n'intersecte pas un autre polygone et qu'il n'intersecte pas le bord de l'écran, on peut le placer. On répète cette étape un grand nombre de fois.}\\
+(image)\\
+Voici un tableau récapitulant les valeurs de densité après un grand nombre d'étapes pour les polygones réguliers convexes de côtés $3, \cdots, 10$.
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 6cm]{images/compact.png}
+    \hfill
+    \label{fig:my_label}
+    \caption{Empilement compact aléatoire}
+\end{figure}
+
+
+\begin{table}[H][Résultats]
+\centering
+
+
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  Nombre de côtés & Densité & Nombre de côtés & Densité \\ 
+  \hline
+  3 & 0.52 & 7 & 0.44\\
+  4 & 0.49 & 8 & 0.43\\
+  5 & 0.45 & 9 & 0.42\\
+  6 & 0.44 & 10 & 0.43 \\
+  \hline
+\end{tabular}
+\end{table}
+
+{\noindent On voit que la densité décroît au fur et à mesure que le nombre de côtés augmente. On voit aussi que la densité n'excède jamais $0.5$, ce qui peut paraître vraiment très peu, il a été démontré qu'avec cet méthode, on peut espérer une densité maximale de $0.54$ environ.}
+
+\subsubsection{Polygones réguliers dans un compact : une méthode moins aléatoire}
+
+{\noindent Dans cette nouvelle simulation, nous avons gardés le principe de placer des objets aléatoirement en rajoutant une nouvelle condition : on a rajouté une gravité, les permettant de s'écraser au sol.}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 6cm]{images/gravity_0.png}
+    \hfill
+    \includegraphics[width = 6cm]{images/gravity_1.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+    \caption{Empilement compact aléatoire avec de la gravité}
+\end{figure}
+
+{\noindent La densité grimpe en flèche pour atteindre rapidement plus de 0.5, on en présentera donc pas les résultats de densités obtenus.}\\
+Voici cependant une structure naturellement apparue au cours de la simulation. Cette structure est naturellement l'empilement hexagonal. La nature fait bien les choses.
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 6cm]{images/gravity_2.png}
+    \hfill
+    \label{fig:my_label}
+    \caption{Empilement compact aléatoire}
+\end{figure}
+
+\subsubsection{Polygones réguliers placés selon différents empilements}
+
+{\noindent Dans cette dernière partie de simulation, nous avons décidés de placer des polygones réguliers convexes à n côtés selon les empilements réguliers carré et hexagonal.}\\
+On voit directement que plus le nombre de côté augmente, plus la densité de notre empilement tend vers la densité de l'empilement hexagonal ou carré ce dont il a été choisi.\\
+On voit cependant que certains agencements sont plus optimale pour certaines formes géométriques. L'empilement carré est parfait pour un carré, alors que l'empilement hexagonale ne l'est pas.
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 5cm]{images/empilement_carre_12.png}
+    \hfill
+    \includegraphics[width = 5cm]{images/empilement_hexagonal_19.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+    \caption{Empilement régulier de polygones réguliers convexes selon le réseau carré et hexagonal}
+\end{figure}
+
+{\noindent Voici un exemple d'empilement parfaitement adapté et l'autre très peu adapté.}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 5cm]{images/parfait_1.png}
+    \hfill
+    \includegraphics[width = 5cm]{images/parfait_0.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+    \caption{Empilement non adapté et adapté}
+\end{figure}
+
+\newpage
+
+\section{Troisième partie : Diagramme de Voronoï}
+
+Le but de cette troisième partie est d'approximer le diagramme de Voronoï d'un ensemble de points donnés. Afin d'illustrer par des exemples le lien entre l'empilement compact et la conjecture du nid d'abeille. Ou encore du lien être les empilements et le pavage du plan.\\\\
+Pour cela, nous avons implémenté un algorithme qui, pour un ensemble de points donnés, approximera son diagramme de Voronoï. L'algorithme fonctionne sur le principe suivant : nous partons d'un ensemble de points, et, pour chaque point, nous allons faire gonfler un disque centré en ce point. Si deux disques se rencontrent, nous les feront s'écraser l'un contre l'autre. Voir le schéma suivant.\\
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/0.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/50.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/100.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/150.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/200.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/350.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/450.png}
+    \hfill
+    \hfill
+    \caption{Étapes de l'algorithme}
+    \label{fig:my_label}
+\end{figure}
+{\noindent
+On comprend bien que chaque zone colorée contient désormais l'ensemble des points qui sont les plus proches du point d'origine de cette zone. En faisant gonfler les cercles et en les empêchant de se superposer, les points de la couleur du disque gonflé seront les plus proches du centre de ce disque (car la boule unité de la norme euclidienne est un cercle). On comprend bien que dès qu'un point blanc sera atteint par un disque D, il sera plus proche du centre D que des centres voisins.} %plus introduire ce qu'est D et le point blanc ?
+\newpage
+%choisir un et bien l'expliquer, mettre le reste en annexe ?
+{\noindent Nous allons maintenant présenter les résultats des diagrammes obtenus, ils sont surtout intéressant visuellement. Ils permettent de conforter l'intuition que nous avons sur le sujet global des empilements compacts liés à l'aspect du pavage du plan. Pour illustrer l'empilement compact, nous allons voir l'exemple des hexagones. On peut voir les hexagones se tracer distinctement à partir de la troisième étape, et finir avec un empilement compact d'hexagones.} 
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/hexa_0.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/hexa_1.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/hexa_2.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/hexa_3.png}
+    \hfill
+    \hfill
+    \caption{Diagramme de Voronoï des centres des disques de l'empilement hexagonal}
+    \label{fig:my_label}
+\end{figure}
+
+{\noindent Il est cependant possible de paver l'espace avec d'autres formes géométriques grâce à cet algorithme. Par exemple, faire des altérations compacte du graphe, ou même simplement paver l'espace avec des carrés.}
+\cite{Voronoi}
+
+\addcontentsline{toc}{part}{Annexe}
+
+\begin{appendices}
+\chapter{Rappels sur les polygones}
+
+{\noindent Cette annexe a pour but de fournir un rapide rappel sur les polygones de manière générale.}
+
+\begin{definition}[Polygone]
+Un polygone est une figure géométrique plane formée d'une ligne brisée fermée, c'est-à-dire d'une suite cyclique de segments consécutifs.
+\end{definition}
+
+\begin{definition}[Sommets d'un polygone]
+Les extrémités des segments sont appelés les sommets du polygone.
+\end{definition}
+
+\begin{definition}[Côtés d'un polygone]
+Les segments du polygone sont appelés les côtés d'un polygone.
+\end{definition}
+
+\begin{definition}[Polygone équilatéral]
+Un polygone équilatéral est un polygone qui a tous ses côtés de même longueur.
+\end{definition}
+
+\begin{definition}[Polygone équiangle]
+Un polygone équiangle est un polygone dont les angles internes sont égaux.
+\end{definition}
+
+\begin{definition}[Polygone régulier]
+Un polygone régulier est un polygone à la fois équilatéral et équiangle.
+\end{definition}
+
+\begin{definition}[Polygone simple]
+Un polygone est dit simple si deux côtés non consécutifs ne se rencontrent pas et deux côtés consécutifs n'ont en commun que l'un de leur sommets.
+\end{definition}
+
+\begin{definition}[Polygone convexe]
+Un polygone convexe est un polygone simple dont l'intérieur est un ensemble convexe. 
+\end{definition}
+
+\begin{definition}[Polygone concave]
+Un polygone simple qui n'est pas convexe est dit concave.
+\end{definition}
+
+Il est utile de faire la nuance quand on parle de polygone régulier, ce qui mtoive l'introduction de ces deux définitions.
+
+\begin{definition}[Polygone régulier étoilé]
+Un polygone régulier étoilé est un polygone régulier non convexe.
+\end{definition}
+
+\begin{definition}[Polygone régulier convexe]
+Un polygone régulier convexe est un polygone régulier convexe.
+\end{definition}
+
+\begin{tcolorbox}[colback=red!6]
+\begin{proposition}[Angle interne d'un polygone régulier convexe]
+Soit P un polygone régulier convexe à n côtés, A et B deux sommets consécutifs, alors AOB = $\frac{2 \pi}{n}$.
+\end{proposition}
+\end{tcolorbox}
+
+\begin{definition}[Apothème]
+L'apothème d'un polygone régulier convexe est le rayon du cercle inscrit dans ce polygone. C'est donc la longueur du segment joignant le centre du polygone au milieu d'un côté.
+\end{definition}
+
+\begin{definition}[Rayon d'un polygone régulier convexe]
+Le rayon d'un polygone régulier convexe P est le rayon du cercle circonscrit à P et est noté $\rho$.
+\end{definition}
+
+\begin{tcolorbox}[colback=red!6]
+\begin{proposition}[Périmètre d'un polygone régulier convexe]
+Soit P un polygone régulier convexe à n côtés, $n \geq 3$, et soit a la longueur d'un côté, alors son périmètre est donné par $P = na$.
+\end{proposition}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!6]
+\begin{proposition}[Périmètre d'un polygone régulier convexe]
+Soit P un polygone régulier convexe à n côtés, et soit a la longueur d'un côté, alors son périmètre est donné par $P = 2n\sin(\frac{pi}{n}) \rho$.
+\end{proposition}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!6]
+\begin{proposition}[Aire d'un polygone régulier convexe]
+Soit P un polygone régulier convexe à n côtés, alors son aire est la somme des aires des n triangles isocèle de hauteur h (l(apothème) et de côtés a, on a donc : $S = n \times \frac{ah}{2} = \frac{Ph}{2}$.
+\end{proposition}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!6]
+\begin{proposition}[Aire d'un polygone régulier convexe]
+Soit P un polygone régulier convexe à n côtés et soit a la longueur d'un côté. Alors son aire est donnée par $S = \frac{na^2}{4 \tan(\frac{\pi}{n})} = \frac{n}{2} \sin(\frac{2 \pi}{n}) \rho ^2$
+\end{proposition}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!6]
+\begin{proposition}
+Si on suppose l'aire de ce polygone régulier convexe à n côtés égal à 1, on aura $L^2 = 4n tan(\frac{pi}{n}$, et on aura aussi $L = 2 \sqrt{n tan(\frac{\pi}{n})}$
+\end{proposition}
+\end{tcolorbox}
+
+\textbf{Remarque :} 
+Pour l'hexagone, on aura $L = 2 \sqrt[4]{12}$, qu'on notera $\pi _6$, d'une manière générale, on notera le périmètre d'un polygone régulier convexe à n côtés $\pi _n$.
+\newpage
+
+
+{\noindent Nous allons donner des informations générales sur l'aire, la taille d'un côté d'aire 1 et si il pave le plan, pour plusieurs figures géométriques.}\\\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabular}{|c|c|c|c|}
+\rowcolor{orange!50}
+\hline Figure   & Aire  & Côté pour une aire de 1 & Pave le plan ? \\
+\hline Hexagone régulier   & $\frac{3\sqrt{3}}{2} * c^2$ & $\sqrt{\frac{2}{3\sqrt{3}}}$ & oui\\
+\hline Triangle équilatéral   &$\frac{\sqrt{3}}{4} * c^2$  & $\frac{2}{\sqrt[4]{3}}$ $\approx 1.5197$  & oui\\
+\hline Carré  & $c^2$ & 4*c & oui \\
+\hline
+\end{tabular}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 5cm]{images/hexagone_regulier.png}
+    \hfill
+    \includegraphics[width = 5cm]{images/triangle equilateral.png}
+    \hfill
+    \includegraphics[width = 5cm]{images/c1.png}
+    \caption{Hexagone régulier ~~~~~~~~~~~~~~~~~~ Triangle équilatéral ~~~~~~~~~~~~~~~~ Carré}
+    \hfill
+    \label{fig:my_label}
+\end{figure}
+
+\end{appendices}
+
+
+\begin{appendices}
+\chapter{Code et aspect mathématique des simulations informatiques}
+
+\section{Aspects mathématiques}
+
+Pour nos simulations informatiques, nous avons du implémenter des objets mathématiques, permettant souvent de simplifier les méthodes utilisées et les résultats obtenus.\\\\
+
+{\noindent \Large\textbf{Comment générer des polygones réguliers \\}}
+
+{\noindent Pour faire nos simulations nous avons besoin de savoir créer efficacement des polygones réguliers.
+On peut d'abord essayer de créer ses sommets.}\\
+On peut remarquer pour cela que l'on peut, à partir d'un seul sommet, et une matrice de rotation, générer tous les points du polygone, et ceci de façon exacte.
+L'idée est de partir d'un point, et de lui appliquer successivement n fois la matrice de rotation, afin de trouver tous les autres sommets.\\
+Si n est le nombre de côtés du triangle, pour trouver le prochain sommet, on doit faire une rotation de ce dernier d'angle $\frac{2 \pi}{n}$\\\\
+\textbf{Matrice de rotation } : \\
+Une matrice de rotation dans le plan est de la forme $\begin{bmatrix} cos{\theta} & -sin(\theta) \\ sin(\theta) & cos(\theta) \end{bmatrix}, ~~\theta \in \mathbb{R}$. \\
+On va noter cette matrice $R(\theta)$. \\\\
+\textbf{Génération des sommets } :\\
+Ainsi, pour générer les sommets d'un polygone à n côtés, on peut utiliser la matrice $R( \frac{2 \pi}{n})$. \\
+On pose $p1$ dans le plan le point de base, puis on pose $p2 = R( \frac{2 \pi}{n})p1$, puis $\cdots$, puis $p_n = R( \frac{2 \pi}{n}) p_n_-_1$. \\
+On remarque que $p_n_+_1 = p1$, en effet, l'ensemble $\{ p_1, \cdots, p_n\}$ est fini, car $(R(\frac{2 \pi}{n}), \times)$ est isomorphe à $\mathbb{Z}/n\mathbb{Z}$ qui est cyclique. 
+
+
+\section{Théorie de la simulation de l'inégalité isopérimétrique}
+
+\subsection{Simulation 1 : Pavage hexagonale \\}
+
+{\noindent Le but de cette simulation sera d'estimer l'inégalité isopérimétrique pour le pavage hexagonale. Nous verrons que le théorème est bien vérifié : l'inégalité est bien atteinte !} \\
+
+{\noindent \textbf{\Large Génération d'un hexagone régulier d'aire 1}}\\\\
+{\noindent Le côté d'un hexagone d'aire 1 vaut $\sqrt{\frac{2}{3\sqrt{3}}}$ \\
+On le note $c_h__1$ }\\
+(centré en l'origine)
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 6cm]{images/hexagon_dots.png}
+    \hfill
+    \hfill
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/h1.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/h2.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/h3.png}
+    \hfill
+    \hfill
+    \caption{Étape 1,2 et 3}
+    \label{fig:my_label}
+\end{figure}
+
+\textbf{\Large Conjecture du nombres d'hexagones à chaque étapes \\}
+
+{\noindent Soit la suite d'entiers naturels $(NH_n)_n_\in_\mathbb{N}$, qui conjecture le nombre total d'hexagones à l'étape n, définie par récurrence :} 
+$$NH_n_+_1=NH_n+6\times n.$$
+
+{\noindent \textbf{Proposition :\\}}
+Cette suite est définie par $NH_n = n(n-1)\times3+1$\\
+
+{\noindent \textbf{Preuve :\\}}
+Soit $P_n : "NH_n = n(n-1)\times 3 + 1" \forall n  \in \mathbb{N}^*$ \\
+
+{\noindent \underline{Initialisation }} : Pour $n=1$:\\
+On a $NH_1 = 1$ selon la conjecture de base, et selon la formule on a aussi $1$. 
+Donc $P_1$ est vraie. \\
+
+{\noindent \underline{Hérédité}} : On suppose que $P_n$ est vraie pour un certain $n \in \mathbb{N}^*$. \\
+
+{\noindent On a $NH_n = n(n-1) \times 3+1$ }\\
+Selon la conjecture, on obtient $NH_n + 6 \times n = n(n-1) \times 3 +1 + 6 \times n$\\
+Et donc $NH_n_+_1 = n((n-1) \times 3 +6)+1$\\
+Et $NH_n_+_1 = n(3n+3)+1 = n(n+1)\times 3 +1$\\\\
+Donc $P_n_+_1$ est vraie donc $P_n$ est vraie $\forall n  \in \mathbb{N}$. \\
+
+\textbf{\Large Conjecture du nombres de traits à chaque étapes \\}
+
+{\noindent Soit la suite d'entiers naturels $(NT_n)_n_\in_\mathbb{N}$, qui conjecture le nombre total de traits à l'étape n, définie par récurrence :}
+$$NT_n_+_1=NT_n + 6 \times (3n + 1)$$
+avec $NT_1 = 6$ \\
+
+{\noindent \textbf{Proposition \\}}
+Cette suite est définie par $NT_n = 9n^2-3n$ \\
+
+{\noindent \textbf{Preuve \\}}
+Soit $P_n : "NT_n = 9n^2-3n" \forall n \in \mathbb{N}$ \
+
+{\noindent \underline{Initialisation}} : Pour $n=1$:
+On a $NT_1 = 6$ selon la conjecture de base, et selon la formule on a aussi $NT_1 = 6$\\
+Donc $P_1$ est vraie. \\
+
+{\noindent \underline{Hérédité}} : On suppose que $P_n$ est vraie pour un certain $n \in \mathbb{N}^*$.\\
+On a $NT_n = 9n^2-3n$\\
+Puis d'après la conjecture on a $NT_n + 6 \times (3n + 1) = 9n^2-3n + 6 \times (3n + 1)$\\
+Et donc $NT_n_+_1 =  9n^2+15n+6=9(n+1)^2-3(n+1)$\\\\
+Donc $P_n_+_1$ est vraie et $P_n$ est vraie $\forall n \in \mathbb{N}$\\
+
+
+{\noindent \textbf{Proposition \\}}\\
+$\overset{n}{\underset{k=0}{\sum}}1+3k = n + 1 + 3 \times \frac{n(n+1)}{2}\\$ \\\\
+\textbf{Preuve \\}\\
+$\overset{n}{\underset{k=0}{\sum}}1+3k = \overset{n}{\underset{k=0}{\sum}}1+3\overset{n}{\underset{k=0}{\sum}}k = n + 1 + 3 \times \frac{n(n+1)}{2}$\\ \\\\
+\textbf{\Large Calcul de l'inégalité isopérimétrique}
+
+{\noindent \textbf{Proposition \\}}\\
+$3\sqrt{\frac{2}{3\sqrt{3}}} = \sqrt[4]{12}$ \\\\
+\textbf{Preuve \\}\\\\
+$3\sqrt{\frac{2}{3\sqrt{3}}} = \sqrt{\frac{18}{3\sqrt{3}}} = \sqrt{\frac{6}{\sqrt{3}}} = \sqrt{2\sqrt{3}} = \sqrt{\sqrt{12}} = \sqrt[4]{12}$ \\\\
+On prend une sous-suite divergente vers l'infini.
+On aura alors \\
+$lim \frac{c_h__1\times(9n^2-3n}{n(n-1)\times3+1} \rightarrow \sqrt[4]{12}$\\
+On constate que l'inégalité est bien atteinte.
+
+\subsection{Simulation 2 : Pavage triangulaire \\}
+
+{\noindent Le but de cette deuxième simulation sera d'estimer l'inégalité isopérimétrique pour le triangle. On constatera qu'elle vérifie bien l'inégalité !}\\
+
+
+{\noindent \textbf{\Large Génération d'un triangle équilatéral d'aire 1}}\\\\
+Le côté d'un triangle équilatéral d'aire 1 vaut $\frac{2}{\sqrt[4]{3}}$.
+
+(centré en l'origine)
+
+\centerline{\includegraphics[width=6cm]{images/tttt.png}} \\
+
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/t1.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/t2.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/t3.png}
+    \hfill
+    \hfill
+    \caption{Étape 1, 2 et 3}
+    \label{fig:my_label}
+\end{figure}
+
+{\noindent \textbf{Conjecture du nombres de triangles à chaque étapes \\}}
+Soit la suite d'entiers naturels $(NTR_n)_n_\in_\mathbb{N}$, qui conjecture le nombre total de triangles équilatéraux à l'étape n, définie par récurrence : \\
+$NTR_n = 4 \times NTR_n_-_1$ avec $NTR_1 = 1$ \\\\
+\textbf{Proposition \\}
+Cette suite est définie par $NTR_n = 4^{n-1}$ \\\\
+\textbf{Preuve  \\}
+Soit $P_n : "NTR_n = 4^{n-1}"$ \\\\
+{\noindent \underline{Initialisation}} : Pour n = 1 : $NTR_1 = 1$ pour les deux formules. Donc $P_1$ est vraie. \\
+{\noindent \underline{Hérédité} : On suppose $P_n$ vraie pour un certain rang $n \in \mathbb{N}$. }\\
+On a alors : $NTR_n = 4^{n-1}$ \\
+Puis on a par la conjecture : $NTR_n_+_1 = 4^n$ \\
+Donc $P_n_+_1$ est vraie donc $P_n$ est vraie $\forall n \in \mathbb{N}$ \\
+
+{\noindent{ \textbf{\Large Conjecture du nombres de traits à chaque étapes }}}\\\\
+Soit la suite d'entiers naturels $(NT_n)_n_\in_\mathbb{N}$, qui conjecture le nombre total de traits à l'étape n, définie par : \\
+\centerline{$NT_n = \frac{3 \times 2^{n-1}(2^{n-1}+1)}{2}$ }\\
+
+{\noindent \textbf{\Large Calcul de l'inégalité isopérimétrique \\}}
+
+{\noindent Le périmètre est donné par la multiplication du nombre de traits avec la longueur d'un trait, on aura donc comme périmètre à l'étape n : }\\
+$p_n = 3*2^{n-1}(2^{n-1}+1) \times \frac{2}{\sqrt[4]{3}}$ \\\\
+Donc on aura $\underset{n \rightarrow \infty}{\lim} \frac{3*2^{n-1}(2^{n-1}+1)}{2 \times 4^{n-1}}\times \frac{2}{\sqrt[4]{3}} = \frac{3}{\sqrt[4]{3}}$ \\
+
+
+\subsection{Simulation 3 : Pavage carré dans le plan \\}
+
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/c1.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/c2.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/c3.png}
+    \hfill
+    \hfill
+    \caption{Étape 1,2 et 3}
+    \label{fig:my_label}
+\end{figure}
+\newpage
+\textbf{\Large Conjecture du nombres de carrés à chaque étapes \\}\\
+Soit la suite d'entiers naturels $(NH_n)_n_\in_\mathbb{N}$, qui conjecture le nombre total de carrés à l'étape n, définie par :
+$$NC_n = 4n^2-4n+1$$
+
+\textbf{\Large Conjecture du nombres de traits à chaque étapes \\}\\
+Soit la suite d'entiers naturels $(NT_n)_n_\in_\mathbb{N}$, qui conjecture le nombre total de traits à l'étape n, définie par :
+$$NT_n = 8n^2-4n$$
+
+\textbf{\Large Calcul de l'inégalité isopérimétrique \\}\\
+$\underset{n \rightarrow \infty}{\lim} \frac{NT_n}{NC_n} = \underset{n \rightarrow \infty}{\lim} \frac{8n^2-4n}{4n^2-4n+1} \approx 2$ \\
+On remarque que le théorème est vérifié.\\\\
+La deuxième partie de cette appendice est consacrée au code source de nos programmes informatiques. Les codes seront commentés in vitro mais non commentés ex vivo, les algorithmes principaux étant bien sûr présentés en détails dans le chapitre sur les simulations.
+
+\section{Les diagrammes de Voronoï}
+
+Nous mettons dans cette appendice tous les résultats non présentés de nos simulations, ceci n'étant pas fondamentalement différents des résultats déjà présentés ici.\\
+
+
+%\subsection{Algorithme de calcul de la constante isopérimétrique}
+
+%\subsection{Diagrammes de Voronoï}
+
+%\cite{Voronoi}
+{\noindent Nous avons précédemment vu le diagramme de Voronoï pour l'hexagone, nous allons présenter les résultats pour le carré, le carré dit perturbé et enfin pour le triangle.\\
+Dans un premier temps, voici les résultats pour le pavage des carrés par diagramme de Voronoï.}
+
+
+\begin{figure}[H]
+\hfill
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_0.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_1.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_2.png}
+    \hfill
+    \hfill
+
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+\hfill
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_3.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_4.png}
+    \hfill
+    \hfill
+    \caption{Diagramme de Voronoï d'un ensemble de points placés selon les centres des disques de l'empilement carré.}
+    \label{fig:my_label}
+\end{figure}
+Maintenant, nous présentons le résultat pour des carrés dit perturbés :
+
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_rand_0.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_rand_1.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_rand_2.png}
+    \hfill
+    \hfill
+\end{figure}
+\begin{figure}[H]
+\hfill
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_rand_3.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/square_rand_4.png}
+    \hfill
+    \hfill
+    \caption{Diagramme de Voronoï d'un ensemble de points placés sur un grillage carré un peu perturbé.}
+    \label{fig:my_label}
+\end{figure}
+{\noindent Voici un exemple d'altération aléatoire du graphe. Une altération aléatoire sur un graphe consiste à déplacer chaque point du graphe dans une direction aléatoire et une distance aléatoire bornée. Comme appliqué ci-dessus.} \\
+Dans nos recherches de simulation, nous nous sommes demandés comment évoluait la constante isopérimétrique d'un graphe altéré aléatoirement. Si l'on considère tout d'abord l'aire de ce nouveau graphe et en le tronquant comme les autres graphes par une boule ouverte centrée en 0 de rayon r. Le graphe tronqué conservera alors son aire, celle de la boule : $\pi r^2$.\\
+L'aire ne change donc pas, intéressons nous maintenant au périmètre de ce graphe tronqué.\\
+On va poser le cadre des simulations, le pavage carré étudier correspond à des altérations de distances ... .
+\newpage
+Et pour finir, le diagramme de Voronoï avec des triangles :
+\begin{figure}[H]
+    \hfill
+    \includegraphics[width = 3.5cm]{images/triangle_0.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/triangle_1.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/triangle_2.png}
+    \hfill
+    \hfill
+\end{figure}
+\begin{figure}[H]
+\hfill
+    \hfill
+    \includegraphics[width = 3.5cm]{images/triangle_3.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/triangle_4.png}
+    \hfill
+    \includegraphics[width = 3.5cm]{images/triangle_5.png}
+    \hfill
+    \hfill
+    \caption{Diagramme de Voronoï d'un ensemble de points situés sur les sommets des hexagones d'un pavage hexagonale.}
+    \label{fig:my_label}
+\end{figure}
+
+\section{Le code}
+\subsection{Le code de la classe Graphe}
+\begin{lstlisting}
+class Graphe:
+    """
+    Classe representant un graphe, avec ses sommets et ses aretes. 
+    """
+    
+    def __init__(self, (nodes, edges)):
+        """
+        nodes : tableau de paire de coordonnees
+        edges : tableau de paire d'index de sommets
+        dx : decalage sur l'axe x par rapport au coin superieur gauche
+        dy : decalage sur l'axe y par rapport au coin superieur gauche
+        scale : facteur de zoom du graphe
+        """
+        self.nodes = nodes
+        self.edges = edges
+        self.dx = 0
+        self.dy = 0
+        self.scale = 0
+        
+    def perim(self):
+        """
+        Cette fonction renvoie le perimetre du graphe.
+        
+        Elle parcourt toutes les aretes du graphe et renvoie la somme le leur longueur.
+        """
+        p = 0
+        
+        def d((xA, yA), (xB, yB)):
+            return sqrt((xB-xA)**2.0+(yB-yA)**2.0)
+        
+        for i in range(len(self.edges)):
+            xA = self.nodes[self.edges[i][0]][0]
+            yA = self.nodes[self.edges[i][0]][1]
+            xB = self.nodes[self.edges[i][1]][0]
+            yB = self.nodes[self.edges[i][1]][1]
+            
+            p = p + d(( xA, yA), (xB , yB))
+        
+        return p
+        
+    def intersect_circ(self, r):
+        """
+        Cette fonction renvoie l'intersection du graphe avec un disque de 
+        rayon r centre en l'origine.
+        
+        Elle construit un nouveau graphe.
+        """
+                
+        def dist(xA, yA):
+            return sqrt(xA*xA+yA*yA)
+            
+        points = []
+        edges = []
+        
+        #on parcourt toutes les aretes
+        for i in range(len(self.edges)):
+            
+            xA = self.nodes[self.edges[i][0]][0]
+            yA = self.nodes[self.edges[i][0]][1]
+            xB = self.nodes[self.edges[i][1]][0]
+            yB = self.nodes[self.edges[i][1]][1]
+            
+            d1 = dist(xA, yA) 
+            d2 = dist(xB, yB)
+            
+            #si l'arete coupe la frontiere du cercle            
+            if((d1<r and d2>r) or (d1>r and d2<r)):
+                
+                t=0
+                #alors la solution se trouve sur cette arete [A, B] on a alors le point solution S = tA+(1-t)B pour un certain t
+                #tant que le point du segment est a une distance > 0.05 du cercle
+                while(abs(dist(xA*t+xB*(1-t), yA*t+yB*(1-t))-r) > 0.05):
+                    t = t+0.005
+                    if t > 10:
+                        break
+                
+                #solution
+                xS = t*xA+(1.0-t)*xB
+                yS = t*yA+(1.0-t)*yB
+                
+                #on rajoute aux points du nouveau graphe les points solutions
+                points = points + [(xS, yS)]
+                
+                #on rajoute les aretes [A, S] ou [B, S] suivant le cas
+                if(dist(xB, yB)<r):
+                    points = points + [(xB, yB)]
+                    edges = edges + [(len(points)-1, len(points)-2)]
+                
+                if(dist(xA, yA)<r):
+                    points = points + [(xA, yA)]
+                    edges = edges + [(len(points)-1, len(points)-2)]
+            
+            #si l'arete est completement dans le cercle
+            if(dist(xA, yA) < r and dist(xB, yB) <r):
+                points = points + [(xA, yA)] + [(xB, yB)]
+                edges = edges + [(len(points)-1, len(points)-2)]
+                
+        graph = Graphe((points, edges))
+        
+        graph.scale = self.scale
+        graph.dx = self.dx
+        graph.dy = self.dy
+        
+        return graph
+
+    def render(self):
+        """
+        Affichage du graphe
+        """
+        for i in range(len(self.edges)):
+            xA = self.nodes[self.edges[i][0]][0]
+            yA = self.nodes[self.edges[i][0]][1]
+            xB = self.nodes[self.edges[i][1]][0]
+            yB = self.nodes[self.edges[i][1]][1]
+            
+            rendline((xA, yA), (xB, yB), self.dx, self.dy, self.scale, (255,0,0), 2)
+
+\end{lstlisting}
+
+\subsection{Le code des algorithmes créant des graphes particuliers}
+\begin{lstlisting}
+def pavage_hexagonale(thickness, dx, dy, scale):
+    """
+    Cette fonction renvoie le graphe du pavage hexagonale
+    thickness : nombre de couches d'hexagone
+    """
+    
+    c1 = 3**(1./4.)/sqrt(2.)
+    c2 = 1./sqrt(2.*sqrt(3.))
+    c3 = sqrt(2.0/(3.0*sqrt(3.0)))
+    
+    points = [(c1*(i+j), c2*(j-i)) for i in
+    range(-thickness/2, thickness/2) for j in range(-thickness/2, thickness/2)]
+    points = points + [(c3 + c1*(i+j), c2*(j-i)) for 
+    i in range(-thickness/2, thickness/2) for j in range(-thickness/2, thickness/2)]
+    
+    edges = [(j+thickness,j+thickness*thickness) for
+    j in range(thickness*thickness) if j < thickness*thickness-thickness]
+    edges = edges + [(j,j+thickness*thickness) for j
+    in range(1,thickness*thickness-1)]
+    edges = edges + [(j+1,j+thickness*thickness) for j
+    in range(thickness*thickness-1) if j%thickness != thickness-1]
+    
+    graph = Graphe((points, edges))
+    
+    graph.scale = scale
+    graph.dx = dx
+    graph.dy = dy
+    
+    return graph    
+
+def pavage_carre(thickness, dx, dy, scale):
+    """
+    Cette fonction renvoie le graphe du pavage carre
+    thickness :  nombre de couches de carres
+    """
+    
+    points = [(i,j) for i in range(-thickness/2, thickness/2) for j 
+    in range(-thickness/2, thickness/2)]
+    edges = [(i,i+thickness) for i in range(thickness*thickness-thickness)]
+    edges = edges + [(i,i+1) for i in range(thickness*thickness-1) if i%thickness != thickness-1]
+    
+    graph = Graphe((points, edges))
+    
+    graph.scale = scale
+    graph.dx = dx
+    graph.dy = dy
+    
+    return graph
+
+def pavage_triangulaire_equi(thickness, dx, dy, scale):
+    """
+    Cette fonction renvoie le graphe du pavage par des triangles equilateraux
+    thickness : nombre de couches de triangle
+    """
+    
+    c3 = 3**(1./4.)
+    c1 = 2.0/c3
+    c2 = 1.0/c3
+    
+    points = [(i*c1+j*c2, j*c3) for i
+    in range(-thickness/2, thickness/2) for j in range(-thickness/2, thickness/2)]
+    edges = [(i,i+thickness) for i 
+    in range(thickness*thickness-thickness)] 
+    
+    + [(i,i+1) for i in range(thickness*thickness-1)
+    if i%thickness != thickness-1] 
+    
+    edges = edges + [(i,i+thickness-1) for i 
+    in range(thickness*thickness-thickness+1)]
+    
+    
+    graph = Graphe((points, edges))
+    
+    graph.scale = scale
+    graph.dx = dx
+    graph.dy = dy
+    
+    return graph
+
+def pavage_carre_random(r, thickness, dx, dy, scale):
+    """
+    perturbe les valeurs dans un intervalle [-r,+r]
+    """
+    points = [(i+random(-r,+r),j+random(-r,+r)) for i 
+    in range(-thickness/2, thickness/2) for j in range(-thickness/2, thickness/2)]
+    edges = [(i,i+thickness) for i in 
+    range(thickness*thickness-thickness)]
+    edges = edges + [(i,i+1) for i in
+    range(thickness*thickness-1) if i%thickness != thickness-1]
+    
+    graph = Graphe((points, edges))
+    
+    graph.scale = scale
+    graph.dx = dx
+    graph.dy = dy
+    
+    return graph
+\end{lstlisting}
+
+\subsection{Le code de la classe polygone régulier}
+\begin{lstlisting}
+class Polygone_regulier():
+    def __init__(self, (c_x, c_y), N, (p_x, p_y), dx, dy, scale):
+        """
+        (c_x, c_y) | le centre du polygone regulier
+        N | le nombre de cote du polygone regulier
+        (p_x, p_y) | la coordonnee du point de depart du polygone
+        dx | decallage x
+        dy | decallage y
+        """
+        
+        self.center = (c_x, c_y)
+        self.N = N
+        self.p = (p_x, p_y)
+        
+        self.dx = dx
+        self.dy = dy
+        self.scale = scale
+        
+        #on creer les matrices 
+        m_centre = Matrice([[c_x],[c_y]])
+        m_p = Matrice([[p_x],[p_y]])
+        
+        #on creer les points du polygone regulier
+        points = [(  (m_centre+(R((2*pi*i)/float(N))*m_p)).tuple[0][0]  ,
+                     (m_centre+(R((2*pi*i)/float(N))*m_p)).tuple[1][0]  ) for i in
+                     range(N)]
+        
+        self.points = points
+    
+        #on relie les points successifs, et, le premier point avec le dernier point
+        edges = [(len(points)-1, 0)] + [(i,i+1) for i in range(len(points)-1)]
+        
+        graphe = Graphe((points, edges))
+        
+        graphe.dx = self.dx
+        graphe.dy = self.dy
+        graphe.scale = self.scale
+        
+        self.graph = graphe
+        
+    def inCarre(self, (x, y, c)):
+        """
+        Cette fonction test si le polygone est situe dans un carre de cote
+        c et de sommet (x,y)
+        """
+        
+        for i in range(len(self.graph.nodes)):
+            if((self.graph.nodes[i][0] <= x-0.01) or (self.graph.nodes[i][0]
+            >= x+c+0.01)
+                   or (self.graph.nodes[i][1] <= y-0.01)or 
+                   (self.graph.nodes[i][1] >= y+c+0.01)):
+                return False
+        return True
+    
+    def intersect(self, pol):
+        """
+        Cette fonction donne une approximation de si deux polygones s'intersectent,
+        elle renvoie True si ils s'intersectent et False sinon
+        """
+        
+        #creation des trois points
+        (x_c, y_c) = self.center
+        
+        (x_p1, y_p1) =  self.points[0]
+            
+        #calcul du grand et petit rayon
+        grand_rayon = d(self.center, (x_p1,y_p1))
+        petit_rayon = self.apothem()
+        
+        #on parcourt tous les cotes du polygone
+        for i in range(len(pol.graph.edges)):
+            
+            #on definit les deux points extremites du segment
+            x0 = (pol.graph.nodes[pol.graph.edges[i][0]][0])
+            y0 = (pol.graph.nodes[pol.graph.edges[i][0]][1])
+            x1 = (pol.graph.nodes[pol.graph.edges[i][1]][0])
+            y1 = (pol.graph.nodes[pol.graph.edges[i][1]][1])
+                        
+            #on parcourt les points de ce segment
+            n =1 # precision
+            for t in range(n):
+                s = t*(1/float(n))
+                dist = d(self.center, (x0*s+(1-s)*x1, y0*s+(1-s)*y1))
+                if(dist < petit_rayon):
+                    return True
+        return False
+    
+    def apothem(self):
+        """
+        Cette fonction renvoie le rayon du cercle inscrit dans le polygone
+        """
+         
+        (x_p1, y_p1) =  self.points[0]
+        (x_p2, y_p2) =  self.points[1]
+        
+        l = d(self.center, ((x_p1+x_p2)/2.0, (y_p1+y_p2)/2.0))
+        
+        return l
+    
+    def rayon(self):
+        """
+        Cette fonction renvoie le rayon du cercle circonscrit ?
+        """
+        
+        l = d(self.center, self.points[0])
+        
+        return l
+
+    def mid(self):
+        """
+        Retourne la moyenne entre le rayon et l'apotheme
+        """
+        
+        return (self.apothem()+self.rayon())/2.0
+        
+    def intersect2(self, pol):
+        """
+        Cette fonction donne une approximation de si deux polygones s'intersectent,
+        elle renvoie True si ils s'intersectent et False sinon
+        """
+        
+        if(d(self.center, pol.center) < self.mid() + pol.apothem()):
+            return True
+        return False
+
+    def render(self):
+        self.graph.render()
+\end{lstlisting}
+\end{appendices}
+
+
+\addcontentsline{toc}{part}{Bibliographie}
+\printbibliography %Prints bibliography
+
+\end{document}

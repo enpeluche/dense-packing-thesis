@@ -1,0 +1,3772 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.11)  20 DEC 2025 18:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-03-26>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count197
+\c@chapter=\count198
+\c@section=\count199
+\c@subsection=\count266
+\c@subsubsection=\count267
+\c@paragraph=\count268
+\c@subparagraph=\count269
+\c@figure=\count270
+\c@table=\count271
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen146
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2025/03/27 v25.6 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count272
+\U@D=\dimen147
+\l@unhyphenated=\language90
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count273
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2024-07-25 v3.6c French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language30). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language30). Reported on input line 92.
+\FB@stdchar=\count274
+Package babel Info: Making : an active character on input line 421.
+Package babel Info: Making ; an active character on input line 422.
+Package babel Info: Making ! an active character on input line 423.
+Package babel Info: Making ? an active character on input line 424.
+\FBguill@level=\count275
+\FBold@everypar=\toks17
+\FB@Mht=\dimen148
+\mc@charclass=\count276
+\mc@charfam=\count277
+\mc@charslot=\count278
+\std@mcc=\count279
+\dec@mcc=\count280
+\FB@parskip=\dimen149
+\listindentFB=\dimen150
+\descindentFB=\dimen151
+\labelindentFB=\dimen152
+\labelwidthFB=\dimen153
+\leftmarginFB=\dimen154
+\parindentFFN=\dimen155
+\FBfnindent=\dimen156
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/babel/locale/fr/babel-french.te
+x
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count281
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count282
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count283
+\c@listtotal=\count284
+\c@listcount=\count285
+\c@liststart=\count286
+\c@liststop=\count287
+\c@citecount=\count288
+\c@citetotal=\count289
+\c@multicitecount=\count290
+\c@multicitetotal=\count291
+\c@instcount=\count292
+\c@maxnames=\count293
+\c@minnames=\count294
+\c@maxitems=\count295
+\c@minitems=\count296
+\c@citecounter=\count297
+\c@maxcitecounter=\count298
+\c@savedcitecounter=\count299
+\c@uniquelist=\count300
+\c@uniquename=\count301
+\c@refsection=\count302
+\c@refsegment=\count303
+\c@maxextratitle=\count304
+\c@maxextratitleyear=\count305
+\c@maxextraname=\count306
+\c@maxextradate=\count307
+\c@maxextraalpha=\count308
+\c@abbrvpenalty=\count309
+\c@highnamepenalty=\count310
+\c@lownamepenalty=\count311
+\c@maxparens=\count312
+\c@parenlevel=\count313
+\blx@tempcnta=\count314
+\blx@tempcntb=\count315
+\blx@tempcntc=\count316
+\c@blx@maxsection=\count317
+\blx@maxsegment@0=\count318
+\blx@notetype=\count319
+\blx@parenlevel@text=\count320
+\blx@parenlevel@foot=\count321
+\blx@sectionciteorder@0=\count322
+\blx@sectionciteorderinternal@0=\count323
+\blx@entrysetcounter=\count324
+\blx@biblioinstance=\count325
+\labelnumberwidth=\skip51
+\labelalphawidth=\skip52
+\biblabelsep=\skip53
+\bibitemsep=\skip54
+\bibnamesep=\skip55
+\bibinitsep=\skip56
+\bibparsep=\skip57
+\bibhang=\skip58
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language91
+\c@mincomprange=\count326
+\c@maxcomprange=\count327
+\c@mincompwidth=\count328
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count329
+\c@savedafterword=\count330
+\c@annotator=\count331
+\c@savedannotator=\count332
+\c@author=\count333
+\c@savedauthor=\count334
+\c@bookauthor=\count335
+\c@savedbookauthor=\count336
+\c@commentator=\count337
+\c@savedcommentator=\count338
+\c@editor=\count339
+\c@savededitor=\count340
+\c@editora=\count341
+\c@savededitora=\count342
+\c@editorb=\count343
+\c@savededitorb=\count344
+\c@editorc=\count345
+\c@savededitorc=\count346
+\c@foreword=\count347
+\c@savedforeword=\count348
+\c@holder=\count349
+\c@savedholder=\count350
+\c@introduction=\count351
+\c@savedintroduction=\count352
+\c@namea=\count353
+\c@savednamea=\count354
+\c@nameb=\count355
+\c@savednameb=\count356
+\c@namec=\count357
+\c@savednamec=\count358
+\c@translator=\count359
+\c@savedtranslator=\count360
+\c@shortauthor=\count361
+\c@savedshortauthor=\count362
+\c@shorteditor=\count363
+\c@savedshorteditor=\count364
+\c@labelname=\count365
+\c@savedlabelname=\count366
+\c@institution=\count367
+\c@savedinstitution=\count368
+\c@lista=\count369
+\c@savedlista=\count370
+\c@listb=\count371
+\c@savedlistb=\count372
+\c@listc=\count373
+\c@savedlistc=\count374
+\c@listd=\count375
+\c@savedlistd=\count376
+\c@liste=\count377
+\c@savedliste=\count378
+\c@listf=\count379
+\c@savedlistf=\count380
+\c@location=\count381
+\c@savedlocation=\count382
+\c@organization=\count383
+\c@savedorganization=\count384
+\c@origlocation=\count385
+\c@savedoriglocation=\count386
+\c@origpublisher=\count387
+\c@savedorigpublisher=\count388
+\c@publisher=\count389
+\c@savedpublisher=\count390
+\c@language=\count391
+\c@savedlanguage=\count392
+\c@origlanguage=\count393
+\c@savedoriglanguage=\count394
+\c@pageref=\count395
+\c@savedpageref=\count396
+\shorthandwidth=\skip59
+\shortjournalwidth=\skip60
+\shortserieswidth=\skip61
+\shorttitlewidth=\skip62
+\shortauthorwidth=\skip63
+\shorteditorwidth=\skip64
+\locallabelnumberwidth=\skip65
+\locallabelalphawidth=\skip66
+\localshorthandwidth=\skip67
+\localshortjournalwidth=\skip68
+\localshortserieswidth=\skip69
+\localshorttitlewidth=\skip70
+\localshortauthorwidth=\skip71
+\localshorteditorwidth=\skip72
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count397
+\c@textcitetotal=\count398
+\c@textcitemaxnames=\count399
+\c@biburlbigbreakpenalty=\count400
+\c@biburlbreakpenalty=\count401
+\c@biburlnumpenalty=\count402
+\c@biburlucpenalty=\count403
+\c@biburllcpenalty=\count404
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count405
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count406
+\c@bbx:relatedtotal=\count407
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-03-26 L3 programming layer (loader) 
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count408
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2025-03-26 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count409
+\c@Blindtext=\count410
+\c@blind@countparstart=\count411
+\blind@countxx=\count412
+\blindtext@numBlindtext=\count413
+\blind@countyy=\count414
+\c@blindlist=\count415
+\c@blindlistlevel=\count416
+\c@blindlist@level=\count417
+\blind@listitem=\count418
+\c@blind@listcount=\count419
+\c@blind@levelcount=\count420
+\blind@mathformula=\count421
+\blind@Mathformula=\count422
+\c@blind@randomcount=\count423
+\c@blind@randommax=\count424
+\c@blind@pangramcount=\count425
+\c@blind@pangrammax=\count426
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count427
+\c@@ppsavesec=\count428
+\c@@ppsaveapp=\count429
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count430
+\Gm@cntv=\count431
+\c@Gm@tempcnt=\count432
+\Gm@bindingoffset=\dimen157
+\Gm@wd@mp=\dimen158
+\Gm@odd@mp=\dimen159
+\Gm@even@mp=\dimen160
+\Gm@layoutwidth=\dimen161
+\Gm@layoutheight=\dimen162
+\Gm@layouthoffset=\dimen163
+\Gm@layoutvoffset=\dimen164
+\Gm@dimlist=\toks19
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen165
+\Gin@req@width=\dimen166
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+)
+\XKV@depth=\count433
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box53
+)
+\tc@llx=\dimen167
+\tc@lly=\dimen168
+\tc@urx=\dimen169
+\tc@ury=\dimen170
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen171
+\adjbox@Height=\dimen172
+\adjbox@Depth=\dimen173
+\adjbox@Totalheight=\dimen174
+\adjbox@pwidth=\dimen175
+\adjbox@pheight=\dimen176
+\adjbox@pdepth=\dimen177
+\adjbox@ptotalheight=\dimen178
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count434
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box54
+\sift@deathcycles=\count435
+\@vwid@loff=\dimen179
+\@vwid@roff=\dimen180
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count436
+\float@exts=\toks24
+\float@box=\box55
+\@float@everytoks=\toks25
+\@floatcapt=\box56
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip73
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen181
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen182
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count437
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count438
+\leftroot@=\count439
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count440
+\DOTSCASE@=\count441
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box57
+\strutbox@=\box58
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen183
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count442
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count443
+\dotsspace@=\muskip22
+\c@parentequation=\count444
+\dspbrk@lvl=\count445
+\tag@help=\toks27
+\row@=\count446
+\column@=\count447
+\maxfields@=\count448
+\andhelp@=\toks28
+\eqnshift@=\dimen184
+\alignsep@=\dimen185
+\tagshift@=\dimen186
+\tagwidth@=\dimen187
+\totwidth@=\dimen188
+\lineht@=\dimen189
+\@envbody=\toks29
+\multlinegap=\skip74
+\multlinetaggap=\skip75
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count449
+\lst@gtempboxa=\box59
+\lst@token=\toks31
+\lst@length=\count450
+\lst@currlwidth=\dimen190
+\lst@column=\count451
+\lst@pos=\count452
+\lst@lostspace=\dimen191
+\lst@width=\dimen192
+\lst@newlines=\count453
+\lst@lineno=\count454
+\lst@maxwidth=\dimen193
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count455
+\lst@skipnumbers=\count456
+\lst@framebox=\box60
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tabto-ltx/tabto.sty
+Package: tabto 2018/12/28  v 1.4  Another tabbing mechanism
+\CurrentLineWidth=\dimen194
+\TabPrevPos=\dimen195
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fncychap/fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip76
+\mylen=\skip77
+\myhi=\skip78
+\px=\skip79
+\py=\skip80
+\pyy=\skip81
+\pxx=\skip82
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen196
+\ar@mcellbox=\box61
+\extrarowheight=\dimen197
+\NC@list=\toks32
+\extratabsurround=\skip83
+\backup@length=\skip84
+\ar@cellbox=\box62
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip85
+\multirow@cntb=\count457
+\multirow@dima=\skip86
+\bigstrutjot=\dimen198
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen199
+\c@nlinenum=\count458
+\TeXr@lab=\toks33
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks34
+\minrowclearance=\skip87
+\rownum=\count459
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen256
+\pgfutil@tempdimb=\dimen257
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box63
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen258
+\pgf@y=\dimen259
+\pgf@xa=\dimen260
+\pgf@ya=\dimen261
+\pgf@xb=\dimen262
+\pgf@yb=\dimen263
+\pgf@xc=\dimen264
+\pgf@yc=\dimen265
+\pgf@xd=\dimen266
+\pgf@yd=\dimen267
+\w@pgf@writea=\write4
+\r@pgf@reada=\read4
+\c@pgf@counta=\count460
+\c@pgf@countb=\count461
+\c@pgf@countc=\count462
+\c@pgf@countd=\count463
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count464
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count465
+\pgfsyssoftpath@bigbuffer@items=\count466
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen268
+\pgfmath@count=\count467
+\pgfmath@box=\box64
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count468
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen269
+\pgf@picmaxx=\dimen270
+\pgf@picminy=\dimen271
+\pgf@picmaxy=\dimen272
+\pgf@pathminx=\dimen273
+\pgf@pathmaxx=\dimen274
+\pgf@pathminy=\dimen275
+\pgf@pathmaxy=\dimen276
+\pgf@xx=\dimen277
+\pgf@xy=\dimen278
+\pgf@yx=\dimen279
+\pgf@yy=\dimen280
+\pgf@zx=\dimen281
+\pgf@zy=\dimen282
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen283
+\pgf@path@lasty=\dimen284
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen285
+\pgf@shorten@start@additional=\dimen286
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box65
+\pgf@hbox=\box66
+\pgf@layerbox@main=\box67
+\pgf@picture@serial@count=\count469
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen287
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen288
+\pgf@pt@y=\dimen289
+\pgf@pt@temp=\dimen290
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen291
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen292
+\pgf@sys@shading@range@num=\count470
+\pgf@shadingcount=\count471
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box68
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box69
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen293
+\pgf@nodesepend=\dimen294
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen295
+\pgffor@skip=\dimen296
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count472
+\pgfplotmarksize=\dimen297
+)
+\tikz@lastx=\dimen298
+\tikz@lasty=\dimen299
+\tikz@lastxsaved=\dimen300
+\tikz@lastysaved=\dimen301
+\tikz@lastmovetox=\dimen302
+\tikz@lastmovetoy=\dimen303
+\tikzleveldistance=\dimen304
+\tikzsiblingdistance=\dimen305
+\tikz@figbox=\box70
+\tikz@figbox@bg=\box71
+\tikz@tempbox=\box72
+\tikz@tempbox@bg=\box73
+\tikztreelevel=\count473
+\tikznumberofchildren=\count474
+\tikznumberofcurrentchild=\count475
+\tikz@fig@count=\count476
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count477
+\pgfmatrixcurrentcolumn=\count478
+\pgf@matrix@numberofcolumns=\count479
+)
+\tikz@expandcount=\count480
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks47
+\verbatim@line=\toks48
+\verbatim@in@stream=\read5
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box74
+\tcb@upperbox=\box75
+\tcb@lowerbox=\box76
+\tcb@phantombox=\box77
+\c@tcbbreakpart=\count481
+\c@tcblayer=\count482
+\c@tcolorbox@number=\count483
+\l__tcobox_tmpa_box=\box78
+\l__tcobox_tmpa_dim=\dimen306
+\tcb@temp=\box79
+\tcb@temp=\box80
+\tcb@temp=\box81
+\tcb@temp=\box82
+)
+
+! LaTeX Error: Option clash for package babel.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \usepackage
+                {fancyhdr}
+The package babel has already been loaded with options:
+  [french]
+There has now been an attempt to load it with options
+  [english]
+Adding the global options:
+  french,english
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip88
+\f@nch@offset@elh=\skip89
+\f@nch@offset@erh=\skip90
+\f@nch@offset@olh=\skip91
+\f@nch@offset@orh=\skip92
+\f@nch@offset@elf=\skip93
+\f@nch@offset@erf=\skip94
+\f@nch@offset@olf=\skip95
+\f@nch@offset@orf=\skip96
+\f@nch@height=\skip97
+\f@nch@footalignment=\skip98
+\f@nch@widthL=\skip99
+\f@nch@widthC=\skip100
+\f@nch@widthR=\skip101
+\@temptokenb=\toks49
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2025/01/27 v2.1e lastpage: 2.09 or 2e? (HMM)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lastpage/lastpage2e.sty
+Package: lastpage2e 2025/01/27 v2.1e Decide which 2e lastpage version to use (H
+MM)
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lastpage/lastpagemodern.sty
+Package: lastpagemodern 2025-01-27 v2.1e Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count484
+) 
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count485
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen307
+\Hy@linkcounter=\count486
+\Hy@pagecounter=\count487
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count488
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count489
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen308
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count490
+\Field@Width=\dimen309
+\Fld@charsize=\dimen310
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count491
+\c@Item=\count492
+\c@Hfootnote=\count493
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count494
+\c@bookmark@seq@number=\count495
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip102
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 42.
+\c@theorem=\count496
+\c@definition=\count497
+\c@proposition=\count498
+\c@proof=\count499
+\c@lemma=\count500
+
+
+Package biblatex Warning: Load 'inputenc' before biblatex.
+
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count501
+\@quotereset=\count502
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
+2.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./main.aux
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported  on input line 13.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Info: Redefining \degres on input line 52.
+LaTeX Info: Redefining \up on input line 52.
+
+
+Package french.ldf Warning: OT1 encoding should not be used for French.
+(french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
+(french.ldf)                of your document; reported on input line 52.
+
+Package biblatex Info: Trying to load language 'french'...
+Package biblatex Info: ... file 'french.lbx' found.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/french.lbx
+File: french.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' not found.
+
+No file main.bbl.
+Package biblatex Info: Reference section=0 on input line 52.
+Package biblatex Info: Reference segment=0 on input line 52.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(65.55515pt, 433.62pt, 98.33273pt)
+* v-part:(T,H,B)=(106.75473pt, 578.15999pt, 160.13213pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=433.62pt
+* \textheight=578.15999pt
+* \oddsidemargin=-6.71484pt
+* \evensidemargin=26.06274pt
+* \topmargin=4.41725pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count503
+\scratchdimen=\dimen311
+\scratchbox=\box83
+\nofMPsegments=\count504
+\nofMParguments=\count505
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count506
+\MPscratchDim=\dimen312
+\MPnumerator=\count507
+\makeMPintoPDFobject=\count508
+\everyMPtoPDFconversion=\toks51
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count509
+Package hyperref Info: Link coloring ON on input line 52.
+
+(./main.out) (./main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+
+
+LaTeX Warning: File `logo_ubfc.png' not found on input line 57.
+
+
+! Package pdftex.def Error: File `logo_ubfc.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...phics[width=8cm,height=5cm]{logo_ubfc.png}
+                                                  \\\\\\\\\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+57.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ... compact et inégalité isopérimétrique}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
+ocal/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}
+
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
+
+[2
+
+] (./main.toc
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
+.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+4.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+4.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+[3])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+
+
+[4]
+
+LaTeX Warning: Citation 'empil4' on page 5 undefined on input line 102.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 104.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.104 C'est à la fin du $XX^{iè
+                                 me}$ siècle que le mathématicien Thomas C...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Citation 'empil3' on page 5 undefined on input line 111.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--112
+
+ []
+
+
+Overfull \hbox (18.37993pt too wide) in paragraph at lines 99--112
+\OT1/lmr/m/n/10 Que va-t-il se pas-ser si on es-saye de m^^Selanger les deux id
+^^Sees de l'em-pi-le-ment com-pact et de l'isop^^Serim^^Setrie ?
+ []
+
+
+
+[5
+
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/loca
+l/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+
+[6
+
+]
+Chapitre 1.
+
+LaTeX Warning: Citation 'empil1' on page 7 undefined on input line 119.
+
+! Undefined control sequence.
+<recently read> \Lamda 
+                       
+l.131 ...e objet est placé sur un réseau $\Lamda
+                                                   = \sum_i \mathbb{Z} v_i$ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (2.91928pt too wide) in paragraph at lines 135--136
+[]\OT1/lmr/m/it/10 Un em-pi-le-ment irr^^Segulier est un em-pi-le-ment o^^Ru le
+s centres
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 \\\\
+          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150 E
+       n 1 dimension, une boule est un segment, on cherche donc à empilemen...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
+
+ []
+
+
+
+[7{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+<images/arrangement_rectangulaire.jpg, id=273, 152.82094pt x 158.84344pt>
+File: images/arrangement_rectangulaire.jpg Graphic file (type jpg)
+<use images/arrangement_rectangulaire.jpg>
+Package pdftex.def Info: images/arrangement_rectangulaire.jpg  used on input li
+ne 162.
+(pdftex.def)             Requested size: 113.81102pt x 118.29608pt.
+<images/arrangement hexagonal.jpg, id=274, 155.07938pt x 142.28156pt>
+File: images/arrangement hexagonal.jpg Graphic file (type jpg)
+<use images/arrangement hexagonal.jpg>
+Package pdftex.def Info: images/arrangement hexagonal.jpg  used on input line 1
+64.
+(pdftex.def)             Requested size: 113.81102pt x 104.41827pt.
+
+
+[8{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc} <./images
+/arrangement_rectangulaire.jpg> <./images/arrangement hexagonal.jpg>]
+<images/orange-1.png, id=282, 119.4864pt x 122.3772pt>
+File: images/orange-1.png Graphic file (type png)
+<use images/orange-1.png>
+Package pdftex.def Info: images/orange-1.png  used on input line 176.
+(pdftex.def)             Requested size: 113.81102pt x 116.56577pt.
+<images/orange-2.png, id=284, 119.4864pt x 112.7412pt>
+File: images/orange-2.png Graphic file (type png)
+<use images/orange-2.png>
+Package pdftex.def Info: images/orange-2.png  used on input line 178.
+(pdftex.def)             Requested size: 113.81102pt x 107.38736pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
+
+ []
+
+<images/orange-3.png, id=285, 161.8848pt x 153.6942pt>
+File: images/orange-3.png Graphic file (type png)
+<use images/orange-3.png>
+Package pdftex.def Info: images/orange-3.png  used on input line 196.
+(pdftex.def)             Requested size: 113.81102pt x 108.05188pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[9 <./images/orange-1.png> <./images/orange-2.png>]
+Overfull \hbox (1.62776pt too wide) in paragraph at lines 200--202
+[]\OT1/lmr/m/n/10 Le rayon des grands cercles nou-vel-le-ment ob-tenu est ^^Seg
+al au $[]$ de la hau-teur du tri-angle ^^Sequilat^^Seral,
+ []
+
+<images/orange-4.png, id=295, 194.6472pt x 108.8868pt>
+File: images/orange-4.png Graphic file (type png)
+<use images/orange-4.png>
+Package pdftex.def Info: images/orange-4.png  used on input line 208.
+(pdftex.def)             Requested size: 142.26378pt x 79.5847pt.
+<images/orange-5.png, id=296, 193.6836pt x 103.587pt>
+File: images/orange-5.png Graphic file (type png)
+<use images/orange-5.png>
+Package pdftex.def Info: images/orange-5.png  used on input line 210.
+(pdftex.def)             Requested size: 142.26378pt x 76.09047pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
+
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.229 ...longueur $r = \frac{2 \frac{\sqrt{3}}}{3}
+                                                  $ séparés par un angle $...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.229 ...longueur $r = \frac{2 \frac{\sqrt{3}}}{3}
+                                                  $ séparés par un angle $...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--232
+
+ []
+
+
+
+[10 <./images/orange-3.png> <./images/orange-4.png> <./images/orange-5.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+<images/arrangement_cubique.png, id=308, 115.93312pt x 122.70844pt>
+File: images/arrangement_cubique.png Graphic file (type png)
+<use images/arrangement_cubique.png>
+Package pdftex.def Info: images/arrangement_cubique.png  used on input line 259
+.
+(pdftex.def)             Requested size: 113.81102pt x 120.46501pt.
+<images/arrangement_cubique_a_face_centree.png, id=309, 115.93312pt x 121.20282
+pt>
+File: images/arrangement_cubique_a_face_centree.png Graphic file (type png)
+<use images/arrangement_cubique_a_face_centree.png>
+Package pdftex.def Info: images/arrangement_cubique_a_face_centree.png  used on
+ input line 261.
+(pdftex.def)             Requested size: 113.81102pt x 118.98692pt.
+<images/arrangemet_hexagonal.png, id=310, 105.39375pt x 109.1578pt>
+File: images/arrangemet_hexagonal.png Graphic file (type png)
+<use images/arrangemet_hexagonal.png>
+Package pdftex.def Info: images/arrangemet_hexagonal.png  used on input line 26
+3.
+(pdftex.def)             Requested size: 113.81102pt x 117.87866pt.
+
+LaTeX Warning: Citation 'empil2' on page 11 undefined on input line 273.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--278
+
+ []
+
+
+Overfull \hbox (2.77776pt too wide) in paragraph at lines 270--278
+[]\OT1/lmr/m/n/10 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--278
+
+ []
+
+
+
+[11 <./images/arrangement_cubique.png> <./images/arrangement_cubique_a_face_cen
+tree.png> <./images/arrangemet_hexagonal.png>]
+<images/Kissing-2d.png, id=321, 123.46124pt x 113.42375pt>
+File: images/Kissing-2d.png Graphic file (type png)
+<use images/Kissing-2d.png>
+Package pdftex.def Info: images/Kissing-2d.png  used on input line 286.
+(pdftex.def)             Requested size: 99.58464pt x 91.4937pt.
+<images/Kissing-3d.png, id=322, 131.49126pt x 135.50626pt>
+File: images/Kissing-3d.png Graphic file (type png)
+<use images/Kissing-3d.png>
+Package pdftex.def Info: images/Kissing-3d.png  used on input line 288.
+(pdftex.def)             Requested size: 99.58464pt x 102.63017pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--291
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[12]
+
+[13 <./images/Kissing-2d.png> <./images/Kissing-3d.png>]
+
+[14
+
+]
+Chapitre 2.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 324.
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 325.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.325 La légende raconte qu'au $IX^{è
+                                       me}$ siècle avant Jésus-Christ, Eli...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Citation 'micmath1' on page 15 undefined on input line 328.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--334
+
+ []
+
+
+
+[15]
+<images/explication_0.png, id=347, 451.6875pt x 602.25pt>
+File: images/explication_0.png Graphic file (type png)
+<use images/explication_0.png>
+Package pdftex.def Info: images/explication_0.png  used on input line 338.
+(pdftex.def)             Requested size: 113.81102pt x 151.74757pt.
+<images/explication_1.png, id=348, 451.6875pt x 602.25pt>
+File: images/explication_1.png Graphic file (type png)
+<use images/explication_1.png>
+Package pdftex.def Info: images/explication_1.png  used on input line 340.
+(pdftex.def)             Requested size: 113.81102pt x 151.74757pt.
+<images/explication_2.png, id=349, 451.6875pt x 602.25pt>
+File: images/explication_2.png Graphic file (type png)
+<use images/explication_2.png>
+Package pdftex.def Info: images/explication_2.png  used on input line 351.
+(pdftex.def)             Requested size: 113.81102pt x 151.74757pt.
+<images/explication_3.png, id=350, 451.6875pt x 602.25pt>
+File: images/explication_3.png Graphic file (type png)
+<use images/explication_3.png>
+Package pdftex.def Info: images/explication_3.png  used on input line 353.
+(pdftex.def)             Requested size: 113.81102pt x 151.74757pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--357
+
+ []
+
+
+Overfull \hbox (2.07536pt too wide) in paragraph at lines 358--363
+\OT1/lmr/m/n/10 Nous pou-vons en-fin in-tro-duire le th^^Seor^^Reme de l'in^^Se
+galit^^Se isop^^Serim^^Setrique, lien entre la sur-face d^^Selimit^^See
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--373
+
+ []
+
+
+
+[16 <./images/explication_0.png> <./images/explication_1.png> <./images/explica
+tion_2.png> <./images/explication_3.png>]
+
+[17]
+Overfull \hbox (29.26395pt too wide) in paragraph at lines 438--440
+\OT1/lmr/m/it/10 alors : [] 
+ []
+
+
+Overfull \hbox (0.99135pt too wide) in paragraph at lines 443--444
+[]\OT1/lmr/m/it/10 Pour prou-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--458
+
+ []
+
+
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
+[]\OT1/lmr/m/it/10 On a $\OML/lmm/m/it/10 ^^U\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 
+@A\OT1/lmr/m/n/10 )[] \OMS/lmsy/m/n/10 ^^U
+ []
+
+
+
+[19]
+
+[20]
+Chapitre 3.
+
+LaTeX Warning: Citation 'thomas1' on page 21 undefined on input line 510.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--518
+
+ []
+
+
+Overfull \hbox (6.37888pt too wide) in paragraph at lines 524--525
+[]\OT1/lmr/m/it/10 Un graphe de $\U/msb/m/n/10 R[]$ \OT1/lmr/m/it/10 com-pos^^S
+e de courbes
+ []
+
+
+
+[21
+
+]
+Overfull \hbox (15.41774pt too wide) in paragraph at lines 540--540
+[]\OT1/lmr/bx/n/12 La conjec-ture du nid d'abeille pour les en-sembles ou-verts
+ non connexes 
+ []
+
+
+Overfull \hbox (21.89565pt too wide) in paragraph at lines 558--561
+[]\OT1/lmr/m/it/10 Soit $\OT1/lmr/m/n/10 (\U/msb/m/n/10 R\OML/lmm/m/it/10 ; []\
+OT1/lmr/m/n/10 )$ \OT1/lmr/m/it/10 l'es-pace me-su-rable $\U/msb/m/n/10 R$ \OT1
+/lmr/m/it/10 muni de sa tribu bor^^Selienne
+ []
+
+
+Overfull \hbox (35.84619pt too wide) in paragraph at lines 565--571
+[]
+ []
+
+
+Underfull \vbox (badness 1028) has occurred while \output is active []
+
+
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 612--615
+[]\OT1/lmr/m/it/10 Soit les $\OML/lmm/m/it/10 R[]$\OT1/lmr/m/it/10 , r^^Segions
+
+ []
+
+
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 618--622
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 618--622
+
+ []
+
+
+! LaTeX Error: Environment preuve undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.623 \begin{preuve}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 624--630
+
+ []
+
+! Undefined control sequence.
+<argument> \ptext 
+                  {perim} (R_i)^2
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
+                                                  {\textdef@ \textstyle \f@s...
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+<argument> \firstchoice@false \ptext 
+                                     {perim} (R_i)^2
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...xtstyle \f@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \sf@...
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+<argument> \firstchoice@false \ptext 
+                                     {perim} (R_i)^2
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...tstyle \sf@size {\firstchoice@false #1}}
+                                                  {\textdef@ \textstyle \ssf...
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+<argument> \firstchoice@false \ptext 
+                                     {perim} (R_i)^2
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
+                                                  }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
+                                                  
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...style \ssf@size {\firstchoice@false #1}}
+                                                  \check@mathfonts }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\text@ ...firstchoice@false #1}}\check@mathfonts }
+                                                  
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   \endgroup 
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.630 ...frac{\text{\ptext{perim} (R_i)^2}}{4 \pi}
+                                                  $$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 649--657
+
+ []
+
+
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 658--673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--673
+
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{preuve}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.675 \end{preuve}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/graphe_0.png, id=430, 301.125pt x 264.99pt>
+File: images/graphe_0.png Graphic file (type png)
+<use images/graphe_0.png>
+Package pdftex.def Info: images/graphe_0.png  used on input line 679.
+(pdftex.def)             Requested size: 99.58464pt x 87.63297pt.
+<images/graphe_1.png, id=431, 301.125pt x 264.99pt>
+File: images/graphe_1.png Graphic file (type png)
+<use images/graphe_1.png>
+Package pdftex.def Info: images/graphe_1.png  used on input line 681.
+(pdftex.def)             Requested size: 99.58464pt x 87.63297pt.
+<images/graphe_2.png, id=432, 301.125pt x 264.99pt>
+File: images/graphe_2.png Graphic file (type png)
+<use images/graphe_2.png>
+Package pdftex.def Info: images/graphe_2.png  used on input line 683.
+(pdftex.def)             Requested size: 99.58464pt x 87.63297pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[26]
+<images/graphe_3.png, id=438, 301.125pt x 264.99pt>
+File: images/graphe_3.png Graphic file (type png)
+<use images/graphe_3.png>
+Package pdftex.def Info: images/graphe_3.png  used on input line 691.
+(pdftex.def)             Requested size: 99.58464pt x 87.63297pt.
+<images/graphe_4.png, id=439, 301.125pt x 264.99pt>
+File: images/graphe_4.png Graphic file (type png)
+<use images/graphe_4.png>
+Package pdftex.def Info: images/graphe_4.png  used on input line 693.
+(pdftex.def)             Requested size: 99.58464pt x 87.63297pt.
+<images/graphe_5.png, id=440, 301.125pt x 264.99pt>
+File: images/graphe_5.png Graphic file (type png)
+<use images/graphe_5.png>
+Package pdftex.def Info: images/graphe_5.png  used on input line 695.
+(pdftex.def)             Requested size: 99.58464pt x 87.63297pt.
+
+
+[27 <./images/graphe_0.png> <./images/graphe_1.png> <./images/graphe_2.png> <./
+images/graphe_3.png> <./images/graphe_4.png> <./images/graphe_5.png>]
+Overfull \hbox (19.6407pt too wide) in paragraph at lines 709--709
+[]\OT1/lmr/bx/n/12 L'in^^Segalit^^Se isop^^Serim^^Setrique hexa-go-nale pour le
+s courbes planes ferm^^Sees. 
+ []
+
+
+Overfull \hbox (18.24179pt too wide) in paragraph at lines 740--742
+\OT1/lmr/m/n/10 inf^^Serieures de la lon-gueur du graphe se-lon diff^^Serents c
+as, qui uti-lisent diff^^Serents th^^Seor^^Remes isop^^Serim^^Setriques
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 743--744
+
+ []
+
+
+
+[28]
+<images/seingeur.png, id=455, 523.20468pt x 404.26031pt>
+File: images/seingeur.png Graphic file (type png)
+<use images/seingeur.png>
+Package pdftex.def Info: images/seingeur.png  used on input line 755.
+(pdftex.def)             Requested size: 142.26378pt x 109.91663pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 745--758
+
+ []
+
+
+Overfull \hbox (25.10153pt too wide) in paragraph at lines 765--767
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 771--772
+
+ []
+
+
+
+[29 <./images/seingeur.png>]
+
+[30]
+Chapitre 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--787
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--787
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--787
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 796--800
+
+ []
+
+<images/pic1.png, id=469, 526.96875pt x 526.96875pt>
+File: images/pic1.png Graphic file (type png)
+<use images/pic1.png>
+Package pdftex.def Info: images/pic1.png  used on input line 803.
+(pdftex.def)             Requested size: 142.26378pt x 142.26738pt.
+<images/pic2.png, id=470, 526.96875pt x 526.96875pt>
+File: images/pic2.png Graphic file (type png)
+<use images/pic2.png>
+Package pdftex.def Info: images/pic2.png  used on input line 805.
+(pdftex.def)             Requested size: 142.26378pt x 142.26738pt.
+<images/pic3.png, id=471, 526.96875pt x 526.96875pt>
+File: images/pic3.png Graphic file (type png)
+<use images/pic3.png>
+Package pdftex.def Info: images/pic3.png  used on input line 807.
+(pdftex.def)             Requested size: 142.26378pt x 142.26738pt.
+
+
+[31
+
+]
+<images/qqq3.png, id=477, 639.89063pt x 639.89063pt>
+File: images/qqq3.png Graphic file (type png)
+<use images/qqq3.png>
+Package pdftex.def Info: images/qqq3.png  used on input line 822.
+(pdftex.def)             Requested size: 99.58464pt x 99.58234pt.
+<images/eee3.png, id=478, 602.25pt x 602.25pt>
+File: images/eee3.png Graphic file (type png)
+<use images/eee3.png>
+Package pdftex.def Info: images/eee3.png  used on input line 831.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+<images/ss1.png, id=479, 376.40625pt x 376.40625pt>
+File: images/ss1.png Graphic file (type png)
+<use images/ss1.png>
+Package pdftex.def Info: images/ss1.png  used on input line 840.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+
+
+[32 <./images/pic1.png> <./images/pic2.png> <./images/pic3.png> <./images/qqq3.
+png> <./images/eee3.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.879 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.896 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[33 <./images/ss1.png>]
+LaTeX Font Info:    Trying to load font information for OMS+lmr on input line 9
+19.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmr.fd
+File: omslmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 919.
+<images/compact.png, id=498, 376.40625pt x 376.40625pt>
+File: images/compact.png Graphic file (type png)
+<use images/compact.png>
+Package pdftex.def Info: images/compact.png  used on input line 931.
+(pdftex.def)             Requested size: 170.71652pt x 170.71947pt.
+
+Underfull \vbox (badness 1694) has occurred while \output is active []
+
+
+
+[34]
+<images/gravity_0.png, id=504, 752.8125pt x 752.8125pt>
+File: images/gravity_0.png Graphic file (type png)
+<use images/gravity_0.png>
+Package pdftex.def Info: images/gravity_0.png  used on input line 962.
+(pdftex.def)             Requested size: 170.71652pt x 170.71947pt.
+<images/gravity_1.png, id=505, 752.8125pt x 752.8125pt>
+File: images/gravity_1.png Graphic file (type png)
+<use images/gravity_1.png>
+Package pdftex.def Info: images/gravity_1.png  used on input line 964.
+(pdftex.def)             Requested size: 170.71652pt x 170.71947pt.
+
+Underfull \vbox (badness 1400) has occurred while \output is active []
+
+
+
+[35 <./images/compact.png>]
+<images/gravity_2.png, id=515, 121.95563pt x 107.65219pt>
+File: images/gravity_2.png Graphic file (type png)
+<use images/gravity_2.png>
+Package pdftex.def Info: images/gravity_2.png  used on input line 976.
+(pdftex.def)             Requested size: 170.71652pt x 150.69559pt.
+<images/empilement_carre_12.png, id=516, 451.6875pt x 451.6875pt>
+File: images/empilement_carre_12.png Graphic file (type png)
+<use images/empilement_carre_12.png>
+Package pdftex.def Info: images/empilement_carre_12.png  used on input line 990
+.
+(pdftex.def)             Requested size: 142.26378pt x 142.26163pt.
+<images/empilement_hexagonal_19.png, id=517, 451.6875pt x 436.63126pt>
+File: images/empilement_hexagonal_19.png Graphic file (type png)
+<use images/empilement_hexagonal_19.png>
+Package pdftex.def Info: images/empilement_hexagonal_19.png  used on input line
+ 992.
+(pdftex.def)             Requested size: 142.26378pt x 137.51958pt.
+
+Underfull \vbox (badness 1418) has occurred while \output is active []
+
+
+
+[36 <./images/gravity_0.png> <./images/gravity_1.png> <./images/gravity_2.png>]
+<images/parfait_1.png, id=528, 451.6875pt x 451.6875pt>
+File: images/parfait_1.png Graphic file (type png)
+<use images/parfait_1.png>
+Package pdftex.def Info: images/parfait_1.png  used on input line 1003.
+(pdftex.def)             Requested size: 142.26378pt x 142.26163pt.
+<images/parfait_0.png, id=529, 451.6875pt x 451.6875pt>
+File: images/parfait_0.png Graphic file (type png)
+<use images/parfait_0.png>
+Package pdftex.def Info: images/parfait_0.png  used on input line 1005.
+(pdftex.def)             Requested size: 142.26378pt x 142.26163pt.
+
+
+[37 <./images/empilement_carre_12.png> <./images/empilement_hexagonal_19.png> <
+./images/parfait_1.png> <./images/parfait_0.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1018
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1018
+
+ []
+
+<images/0.png, id=542, 752.8125pt x 752.8125pt>
+File: images/0.png Graphic file (type png)
+<use images/0.png>
+Package pdftex.def Info: images/0.png  used on input line 1021.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/50.png, id=543, 752.8125pt x 752.8125pt>
+File: images/50.png Graphic file (type png)
+<use images/50.png>
+Package pdftex.def Info: images/50.png  used on input line 1023.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/100.png, id=544, 752.8125pt x 752.8125pt>
+File: images/100.png Graphic file (type png)
+<use images/100.png>
+Package pdftex.def Info: images/100.png  used on input line 1025.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/150.png, id=545, 752.8125pt x 752.8125pt>
+File: images/150.png Graphic file (type png)
+<use images/150.png>
+Package pdftex.def Info: images/150.png  used on input line 1033.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/200.png, id=546, 752.8125pt x 752.8125pt>
+File: images/200.png Graphic file (type png)
+<use images/200.png>
+Package pdftex.def Info: images/200.png  used on input line 1035.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/350.png, id=547, 752.8125pt x 752.8125pt>
+File: images/350.png Graphic file (type png)
+<use images/350.png>
+Package pdftex.def Info: images/350.png  used on input line 1037.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/450.png, id=548, 752.8125pt x 752.8125pt>
+File: images/450.png Graphic file (type png)
+<use images/450.png>
+Package pdftex.def Info: images/450.png  used on input line 1039.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+
+
+[38 <./images/0.png> <./images/50.png> <./images/100.png> <./images/150.png> <.
+/images/200.png> <./images/350.png> <./images/450.png>]
+<images/hexa_0.png, id=562, 376.40625pt x 376.40625pt>
+File: images/hexa_0.png Graphic file (type png)
+<use images/hexa_0.png>
+Package pdftex.def Info: images/hexa_0.png  used on input line 1052.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/hexa_1.png, id=563, 376.40625pt x 376.40625pt>
+File: images/hexa_1.png Graphic file (type png)
+<use images/hexa_1.png>
+Package pdftex.def Info: images/hexa_1.png  used on input line 1054.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/hexa_2.png, id=564, 376.40625pt x 376.40625pt>
+File: images/hexa_2.png Graphic file (type png)
+<use images/hexa_2.png>
+Package pdftex.def Info: images/hexa_2.png  used on input line 1056.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/hexa_3.png, id=565, 376.40625pt x 376.40625pt>
+File: images/hexa_3.png Graphic file (type png)
+<use images/hexa_3.png>
+Package pdftex.def Info: images/hexa_3.png  used on input line 1058.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+
+
+LaTeX Warning: Citation 'Voronoi' on page 39 undefined on input line 1066.
+
+
+
+[39 <./images/hexa_0.png> <./images/hexa_1.png> <./images/hexa_2.png> <./images
+/hexa_3.png>]
+
+[40
+
+]
+Annexe A.
+
+Overfull \hbox (8.33392pt too wide) in paragraph at lines 1118--1119
+[]\OT1/lmr/m/it/10 Un po-ly-gone r^^Segulier convexe est un po-ly-gone r^^Segul
+ier
+ []
+
+
+
+[41]
+Overfull \hbox (11.8023pt too wide) in paragraph at lines 1132--1133
+[]\OT1/lmr/m/it/10 Le rayon d'un po-ly-gone r^^Segulier convexe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1137--1138
+[]\OT1/lmr/m/it/10 Soit P un po-ly-gone
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1143--1144
+[]\OT1/lmr/m/it/10 Soit P un po-ly-gone
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 1149--1150
+[]\OT1/lmr/m/it/10 Soit P un po-ly-gone r^^Segulier
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 1155--1156
+[]\OT1/lmr/m/it/10 Soit P un po-ly-gone r^^Segulier
+ []
+
+
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1171
+
+ []
+
+<images/hexagone_regulier.png, id=608, 677.53125pt x 677.53125pt>
+File: images/hexagone_regulier.png Graphic file (type png)
+<use images/hexagone_regulier.png>
+Package pdftex.def Info: images/hexagone_regulier.png  used on input line 1185.
+
+(pdftex.def)             Requested size: 142.26378pt x 142.26508pt.
+<images/triangle equilateral.png, id=609, 677.53125pt x 677.53125pt>
+File: images/triangle equilateral.png Graphic file (type png)
+<use images/triangle equilateral.png>
+Package pdftex.def Info: images/triangle equilateral.png  used on input line 11
+87.
+(pdftex.def)             Requested size: 142.26378pt x 142.26508pt.
+<images/c1.png, id=610, 677.53125pt x 677.53125pt>
+File: images/c1.png Graphic file (type png)
+<use images/c1.png>
+Package pdftex.def Info: images/c1.png  used on input line 1189.
+(pdftex.def)             Requested size: 142.26378pt x 142.26508pt.
+
+
+[43 <./images/hexagone_regulier.png> <./images/triangle equilateral.png> <./ima
+ges/c1.png>]
+
+[44
+
+]
+Annexe B.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1203--1204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1203--1204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1206
+
+ []
+
+! Double subscript.
+l.1217 ...s$, puis $p_n = R( \frac{2 \pi}{n}) p_n_
+                                                  -_1$. \\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1217 ..., puis $p_n = R( \frac{2 \pi}{n}) p_n_-_
+                                                  1$. \\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1218 On remarque que $p_n_
+                            +_1 = p1$, en effet, l'ensemble $\{ p_1, \cdots,...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1218 On remarque que $p_n_+_
+                              1 = p1$, en effet, l'ensemble $\{ p_1, \cdots,...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1207--1219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1207--1219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1223--1223
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 1223.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1226
+
+ []
+
+
+Underfull \vbox (badness 1072) has occurred while \output is active []
+
+
+
+[45]
+! Double subscript.
+l.1229 On le note $c_h_
+                       _1$ }\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.1229 On le note $c_h__
+                        1$ }\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1229 On le note $c_h__1$
+                           }\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<images/hexagon_dots.png, id=631, 526.96875pt x 337.26pt>
+File: images/hexagon_dots.png Graphic file (type png)
+<use images/hexagon_dots.png>
+Package pdftex.def Info: images/hexagon_dots.png  used on input line 1233.
+(pdftex.def)             Requested size: 170.71652pt x 109.25826pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1227--1237
+
+ []
+
+<images/h1.png, id=632, 677.53125pt x 677.53125pt>
+File: images/h1.png Graphic file (type png)
+<use images/h1.png>
+Package pdftex.def Info: images/h1.png  used on input line 1241.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+<images/h2.png, id=633, 677.53125pt x 677.53125pt>
+File: images/h2.png Graphic file (type png)
+<use images/h2.png>
+Package pdftex.def Info: images/h2.png  used on input line 1243.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+<images/h3.png, id=634, 677.53125pt x 677.53125pt>
+File: images/h3.png Graphic file (type png)
+<use images/h3.png>
+Package pdftex.def Info: images/h3.png  used on input line 1245.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1253
+
+ []
+
+! Double subscript.
+l.1254 ...t la suite d'entiers naturels $(NH_n)_n_
+                                                  \in_\mathbb{N}$, qui conje...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1254 ... suite d'entiers naturels $(NH_n)_n_\in_
+                                                  \mathbb{N}$, qui conjectur...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1255 $$NH_n_
+              +_1=NH_n+6\times n.$$
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1255 $$NH_n_+_
+                1=NH_n+6\times n.$$
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1257--1259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1260--1262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1263--1266
+
+ []
+
+
+
+[46 <./images/hexagon_dots.png> <./images/h1.png> <./images/h2.png> <./images/h
+3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1267--1268
+
+ []
+
+! Double subscript.
+l.1271 Et donc $NH_n_
+                     +_1 = n((n-1) \times 3 +6)+1$\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1271 Et donc $NH_n_+_
+                       1 = n((n-1) \times 3 +6)+1$\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1272 Et $NH_n_
+                +_1 = n(3n+3)+1 = n(n+1)\times 3 +1$\\\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1272 Et $NH_n_+_
+                  1 = n(3n+3)+1 = n(n+1)\times 3 +1$\\\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1273 Donc $P_n_
+                 +_1$ est vraie donc $P_n$ est vraie $\forall n  \in \mathbb...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1273 Donc $P_n_+_
+                   1$ est vraie donc $P_n$ est vraie $\forall n  \in \mathbb...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1275--1276
+
+ []
+
+! Double subscript.
+l.1277 ...t la suite d'entiers naturels $(NT_n)_n_
+                                                  \in_\mathbb{N}$, qui conje...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1277 ... suite d'entiers naturels $(NT_n)_n_\in_
+                                                  \mathbb{N}$, qui conjectur...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1278 $$NT_n_
+              +_1=NT_n + 6 \times (3n + 1)$$
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1278 $$NT_n_+_
+                1=NT_n + 6 \times (3n + 1)$$
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1281--1283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1290
+
+ []
+
+! Double subscript.
+l.1294 Et donc $NT_n_
+                     +_1 =  9n^2+15n+6=9(n+1)^2-3(n+1)$\\\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1294 Et donc $NT_n_+_
+                       1 =  9n^2+15n+6=9(n+1)^2-3(n+1)$\\\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1295 Donc $P_n_
+                 +_1$ est vraie et $P_n$ est vraie $\forall n \in \mathbb{N}$\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1295 Donc $P_n_+_
+                   1$ est vraie et $P_n$ est vraie $\forall n \in \mathbb{N}$\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1291--1296
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1291--1296
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1303
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1303
+
+ []
+
+! Double subscript.
+<argument> c_h_
+               _1\times (9n^2-3n
+l.1310 ...c{c_h__1\times(9n^2-3n}{n(n-1)\times3+1}
+                                                   \rightarrow \sqrt[4]{12}$\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing { inserted.
+<to be read again> 
+                   _
+l.1310 ...c{c_h__1\times(9n^2-3n}{n(n-1)\times3+1}
+                                                   \rightarrow \sqrt[4]{12}$\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1310 ...c{c_h__1\times(9n^2-3n}{n(n-1)\times3+1}
+                                                   \rightarrow \sqrt[4]{12}$\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1304--1312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1304--1312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1304--1312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1304--1312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1304--1312
+
+ []
+
+
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 1313--1313
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 1313.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1315--1316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1318--1320
+
+ []
+
+<images/tttt.png, id=648, 526.96875pt x 337.26pt>
+File: images/tttt.png Graphic file (type png)
+<use images/tttt.png>
+Package pdftex.def Info: images/tttt.png  used on input line 1323.
+(pdftex.def)             Requested size: 170.71652pt x 109.25826pt.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1324 
+       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/t1.png, id=649, 677.53125pt x 677.53125pt>
+File: images/t1.png Graphic file (type png)
+<use images/t1.png>
+Package pdftex.def Info: images/t1.png  used on input line 1328.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+<images/t2.png, id=650, 677.53125pt x 677.53125pt>
+File: images/t2.png Graphic file (type png)
+<use images/t2.png>
+Package pdftex.def Info: images/t2.png  used on input line 1330.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+<images/t3.png, id=651, 677.53125pt x 677.53125pt>
+File: images/t3.png Graphic file (type png)
+<use images/t3.png>
+Package pdftex.def Info: images/t3.png  used on input line 1332.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+! Double subscript.
+l.1340 ... la suite d'entiers naturels $(NTR_n)_n_
+                                                  \in_\mathbb{N}$, qui conje...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1340 ...suite d'entiers naturels $(NTR_n)_n_\in_
+                                                  \mathbb{N}$, qui conjectur...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1341 $NTR_n = 4 \times NTR_n_
+                               -_1$ avec $NTR_1 = 1$ \\\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1341 $NTR_n = 4 \times NTR_n_-_
+                                 1$ avec $NTR_1 = 1$ \\\\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1349 Puis on a par la conjecture : $NTR_n_
+                                            +_1 = 4^n$ \\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1349 Puis on a par la conjecture : $NTR_n_+_
+                                              1 = 4^n$ \\
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1350 Donc $P_n_
+                 +_1$ est vraie donc $P_n$ est vraie $\forall n \in \mathbb{...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1350 Donc $P_n_+_
+                   1$ est vraie donc $P_n$ est vraie $\forall n \in \mathbb{...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1339--1351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1339--1351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1339--1351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1339--1351
+
+ []
+
+
+
+[48 <./images/tttt.png> <./images/t1.png> <./images/t2.png> <./images/t3.png>]
+! Double subscript.
+l.1353 Soit la suite d'entiers naturels $(NT_n)_n_
+                                                  \in_\mathbb{N}$, qui conje...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1353 ... suite d'entiers naturels $(NT_n)_n_\in_
+                                                  \mathbb{N}$, qui conjectur...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1352--1355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1352--1355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1356--1357
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1363--1363
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 1363.
+
+File: images/c1.png Graphic file (type png)
+<use images/c1.png>
+Package pdftex.def Info: images/c1.png  used on input line 1368.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+<images/c2.png, id=662, 677.53125pt x 677.53125pt>
+File: images/c2.png Graphic file (type png)
+<use images/c2.png>
+Package pdftex.def Info: images/c2.png  used on input line 1370.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+<images/c3.png, id=663, 677.53125pt x 677.53125pt>
+File: images/c3.png Graphic file (type png)
+<use images/c3.png>
+Package pdftex.def Info: images/c3.png  used on input line 1372.
+(pdftex.def)             Requested size: 99.58464pt x 99.57831pt.
+
+
+[49 <./images/c2.png> <./images/c3.png>]
+! Double subscript.
+l.1380 Soit la suite d'entiers naturels $(NH_n)_n_
+                                                  \in_\mathbb{N}$, qui conje...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1380 ... suite d'entiers naturels $(NH_n)_n_\in_
+                                                  \mathbb{N}$, qui conjectur...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1379--1381
+
+ []
+
+! Double subscript.
+l.1384 Soit la suite d'entiers naturels $(NT_n)_n_
+                                                  \in_\mathbb{N}$, qui conje...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1384 ... suite d'entiers naturels $(NT_n)_n_\in_
+                                                  \mathbb{N}$, qui conjectur...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1383--1385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1394--1395
+
+ []
+
+<images/square_0.png, id=673, 376.40625pt x 376.40625pt>
+File: images/square_0.png Graphic file (type png)
+<use images/square_0.png>
+Package pdftex.def Info: images/square_0.png  used on input line 1409.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/square_1.png, id=674, 376.40625pt x 376.40625pt>
+File: images/square_1.png Graphic file (type png)
+<use images/square_1.png>
+Package pdftex.def Info: images/square_1.png  used on input line 1411.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/square_2.png, id=675, 376.40625pt x 376.40625pt>
+File: images/square_2.png Graphic file (type png)
+<use images/square_2.png>
+Package pdftex.def Info: images/square_2.png  used on input line 1413.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/square_3.png, id=676, 376.40625pt x 376.40625pt>
+File: images/square_3.png Graphic file (type png)
+<use images/square_3.png>
+Package pdftex.def Info: images/square_3.png  used on input line 1423.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/square_4.png, id=677, 376.40625pt x 376.40625pt>
+File: images/square_4.png Graphic file (type png)
+<use images/square_4.png>
+Package pdftex.def Info: images/square_4.png  used on input line 1425.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[50 <./images/square_0.png> <./images/square_1.png> <./images/square_2.png>]
+<images/square_rand_0.png, id=685, 752.8125pt x 752.8125pt>
+File: images/square_rand_0.png Graphic file (type png)
+<use images/square_rand_0.png>
+Package pdftex.def Info: images/square_rand_0.png  used on input line 1435.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/square_rand_1.png, id=686, 752.8125pt x 752.8125pt>
+File: images/square_rand_1.png Graphic file (type png)
+<use images/square_rand_1.png>
+Package pdftex.def Info: images/square_rand_1.png  used on input line 1437.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/square_rand_2.png, id=687, 752.8125pt x 752.8125pt>
+File: images/square_rand_2.png Graphic file (type png)
+<use images/square_rand_2.png>
+Package pdftex.def Info: images/square_rand_2.png  used on input line 1439.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/square_rand_3.png, id=688, 752.8125pt x 752.8125pt>
+File: images/square_rand_3.png Graphic file (type png)
+<use images/square_rand_3.png>
+Package pdftex.def Info: images/square_rand_3.png  used on input line 1446.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+<images/square_rand_4.png, id=689, 752.8125pt x 752.8125pt>
+File: images/square_rand_4.png Graphic file (type png)
+<use images/square_rand_4.png>
+Package pdftex.def Info: images/square_rand_4.png  used on input line 1448.
+(pdftex.def)             Requested size: 99.58464pt x 99.58061pt.
+
+
+[51 <./images/square_3.png> <./images/square_4.png> <./images/square_rand_0.png
+> <./images/square_rand_1.png> <./images/square_rand_2.png> <./images/square_ra
+nd_3.png> <./images/square_rand_4.png>]
+<images/triangle_0.png, id=699, 376.40625pt x 376.40625pt>
+File: images/triangle_0.png Graphic file (type png)
+<use images/triangle_0.png>
+Package pdftex.def Info: images/triangle_0.png  used on input line 1462.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/triangle_1.png, id=700, 376.40625pt x 376.40625pt>
+File: images/triangle_1.png Graphic file (type png)
+<use images/triangle_1.png>
+Package pdftex.def Info: images/triangle_1.png  used on input line 1464.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/triangle_2.png, id=701, 376.40625pt x 376.40625pt>
+File: images/triangle_2.png Graphic file (type png)
+<use images/triangle_2.png>
+Package pdftex.def Info: images/triangle_2.png  used on input line 1466.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/triangle_3.png, id=702, 376.40625pt x 376.40625pt>
+File: images/triangle_3.png Graphic file (type png)
+<use images/triangle_3.png>
+Package pdftex.def Info: images/triangle_3.png  used on input line 1473.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/triangle_4.png, id=703, 376.40625pt x 376.40625pt>
+File: images/triangle_4.png Graphic file (type png)
+<use images/triangle_4.png>
+Package pdftex.def Info: images/triangle_4.png  used on input line 1475.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+<images/triangle_5.png, id=704, 376.40625pt x 376.40625pt>
+File: images/triangle_5.png Graphic file (type png)
+<use images/triangle_5.png>
+Package pdftex.def Info: images/triangle_5.png  used on input line 1477.
+(pdftex.def)             Requested size: 99.58464pt x 99.58635pt.
+
+
+[52 <./images/triangle_0.png> <./images/triangle_1.png> <./images/triangle_2.pn
+g> <./images/triangle_3.png> <./images/triangle_4.png> <./images/triangle_5.png
+>]
+Overfull \hbox (88.38531pt too wide) in paragraph at lines 1510--1511
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+515.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (4.38446pt too wide) in paragraph at lines 1529--1530
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for OML+lmr on input line 1
+553.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmr.fd
+File: omllmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OML/lmr/m/n' in size <10> not available
+(Font)              Font shape `OML/lmm/m/it' tried instead on input line 1553.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[53{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+Overfull \hbox (334.38782pt too wide) in paragraph at lines 1556--1557
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (52.38495pt too wide) in paragraph at lines 1557--1558
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (28.3847pt too wide) in paragraph at lines 1567--1568
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[54]
+Overfull \hbox (70.38513pt too wide) in paragraph at lines 1602--1604
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.38483pt too wide) in paragraph at lines 1619--1620
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (70.38513pt too wide) in paragraph at lines 1621--1623
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.38446pt too wide) in paragraph at lines 1624--1625
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.38458pt too wide) in paragraph at lines 1646--1647
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (148.38593pt too wide) in paragraph at lines 1647--1649
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][] 
+ []
+
+
+
+[55]
+Overfull \hbox (28.3847pt too wide) in paragraph at lines 1659--1660
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (58.38501pt too wide) in paragraph at lines 1668--1669
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (58.38501pt too wide) in paragraph at lines 1692--1693
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[56]
+Overfull \hbox (4.38446pt too wide) in paragraph at lines 1732--1733
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (58.38501pt too wide) in paragraph at lines 1733--1734
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.38507pt too wide) in paragraph at lines 1738--1739
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.38477pt too wide) in paragraph at lines 1739--1741
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[57]
+Overfull \hbox (10.38452pt too wide) in paragraph at lines 1751--1752
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (22.38464pt too wide) in paragraph at lines 1756--1757
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.38507pt too wide) in paragraph at lines 1765--1766
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[58]
+Overfull \hbox (10.38452pt too wide) in paragraph at lines 1798--1799
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (64.38507pt too wide) in paragraph at lines 1826--1827
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+LaTeX Warning: Empty bibliography on input line 1841.
+
+
+
+[59] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-03-26>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5F127787070F90EB60BAFDF6FA009A24;10162.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 37031 strings out of 469626
+ 707894 string characters out of 5471010
+ 1532966 words of memory out of 5000000
+ 62775 multiletter control sequences out of 15000+600000
+ 681735 words of font info for 71 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 98i,16n,101p,1105b,2283s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texliv
+e/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/te
+xmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/f
+onts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1
+/public/lm/lmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/
+lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/
+texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025
+/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/
+fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type
+1/public/lm/lmri7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm
+/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy5.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/loca
+l/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/
+2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (59 pages, 1581152 bytes).
+PDF statistics:
+ 1299 PDF objects out of 1440 (max. 8388607)
+ 1054 compressed objects within 11 object streams
+ 521 named destinations out of 1000 (max. 500000)
+ 734 words of extra memory for PDF output out of 10000 (max. 10000000)
+
